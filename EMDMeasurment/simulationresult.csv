@@ -1,0 +1,631 @@
+case:concept:name,concept:name,time:timestamp
+0,register request,2021-01-01 01:00:00
+0,check ticket,2021-01-01 03:57:57
+1,register request,2021-01-01 04:00:30
+2,register request,2021-01-01 06:58:21
+1,examine casually,2021-01-01 08:23:59
+3,register request,2021-01-01 10:03:24
+4,register request,2021-01-01 12:58:49
+5,register request,2021-01-01 15:51:08
+2,check ticket,2021-01-01 16:54:01
+3,check ticket,2021-01-01 18:32:15
+3,examine thoroughly,2021-01-01 18:32:15
+3,decide,2021-01-01 18:32:15
+6,register request,2021-01-01 18:52:38
+3,pay compensation,2021-01-01 19:04:07
+7,register request,2021-01-01 21:54:26
+8,register request,2021-01-02 00:51:55
+8,check ticket,2021-01-02 02:27:19
+9,register request,2021-01-02 03:49:41
+10,register request,2021-01-02 06:49:05
+4,check ticket,2021-01-02 06:57:22
+7,check ticket,2021-01-02 08:53:54
+5,check ticket,2021-01-02 09:04:40
+11,register request,2021-01-02 09:49:31
+12,register request,2021-01-02 12:47:33
+12,check ticket,2021-01-02 12:47:33
+13,register request,2021-01-02 15:46:27
+14,register request,2021-01-02 18:51:48
+13,check ticket,2021-01-02 19:26:36
+6,examine casually,2021-01-02 19:33:57
+1,check ticket,2021-01-02 20:07:56
+15,register request,2021-01-02 21:50:36
+6,check ticket,2021-01-03 00:25:54
+16,register request,2021-01-03 00:52:08
+17,register request,2021-01-03 03:50:45
+15,check ticket,2021-01-03 04:19:43
+18,register request,2021-01-03 06:49:49
+18,check ticket,2021-01-03 06:49:49
+18,examine casually,2021-01-03 06:49:49
+16,check ticket,2021-01-03 07:11:26
+10,examine thoroughly,2021-01-03 08:44:15
+19,register request,2021-01-03 09:47:25
+19,check ticket,2021-01-03 09:47:25
+17,check ticket,2021-01-03 11:08:32
+9,check ticket,2021-01-03 11:15:14
+9,examine casually,2021-01-03 11:15:14
+9,decide,2021-01-03 12:17:56
+20,register request,2021-01-03 12:47:01
+2,examine casually,2021-01-03 13:05:25
+2,decide,2021-01-03 13:05:25
+14,examine casually,2021-01-03 13:41:20
+21,register request,2021-01-03 15:47:51
+2,pay compensation,2021-01-03 16:44:57
+11,examine casually,2021-01-03 18:30:22
+16,examine casually,2021-01-03 18:38:14
+22,register request,2021-01-03 18:45:33
+20,check ticket,2021-01-03 18:54:45
+22,check ticket,2021-01-03 18:55:28
+22,examine thoroughly,2021-01-03 18:55:28
+22,decide,2021-01-03 18:55:28
+23,register request,2021-01-03 21:42:21
+14,check ticket,2021-01-04 00:20:28
+14,decide,2021-01-04 00:20:28
+24,register request,2021-01-04 00:42:29
+0,examine thoroughly,2021-01-04 01:44:40
+25,register request,2021-01-04 03:42:19
+26,register request,2021-01-04 06:44:27
+5,examine thoroughly,2021-01-04 08:54:38
+27,register request,2021-01-04 09:46:24
+21,examine casually,2021-01-04 11:22:47
+21,check ticket,2021-01-04 11:22:47
+21,decide,2021-01-04 11:22:47
+23,examine casually,2021-01-04 11:27:37
+28,register request,2021-01-04 12:45:08
+29,register request,2021-01-04 15:43:32
+28,check ticket,2021-01-04 17:48:51
+30,register request,2021-01-04 18:41:46
+30,check ticket,2021-01-04 18:41:46
+25,check ticket,2021-01-04 20:47:54
+31,register request,2021-01-04 21:34:52
+6,decide,2021-01-04 22:49:43
+26,examine casually,2021-01-04 22:59:34
+32,register request,2021-01-05 00:36:50
+5,decide,2021-01-05 03:22:16
+33,register request,2021-01-05 03:39:10
+27,examine thoroughly,2021-01-05 03:54:08
+27,check ticket,2021-01-05 03:54:08
+18,decide,2021-01-05 06:15:05
+32,check ticket,2021-01-05 06:27:41
+34,register request,2021-01-05 06:40:08
+33,check ticket,2021-01-05 07:29:04
+31,examine casually,2021-01-05 07:38:55
+21,reinitiate request,2021-01-05 08:10:46
+21,check ticket,2021-01-05 08:10:46
+29,check ticket,2021-01-05 09:06:26
+8,examine thoroughly,2021-01-05 09:17:05
+35,register request,2021-01-05 09:33:51
+17,examine casually,2021-01-05 11:08:35
+17,decide,2021-01-05 11:08:35
+24,check ticket,2021-01-05 11:27:47
+36,register request,2021-01-05 12:29:48
+10,check ticket,2021-01-05 13:21:58
+36,check ticket,2021-01-05 13:41:48
+1,decide,2021-01-05 14:00:55
+20,examine thoroughly,2021-01-05 14:23:30
+37,register request,2021-01-05 15:25:19
+34,check ticket,2021-01-05 17:48:50
+38,register request,2021-01-05 18:27:09
+37,check ticket,2021-01-05 20:19:19
+28,examine casually,2021-01-05 21:13:12
+39,register request,2021-01-05 21:29:17
+39,check ticket,2021-01-05 21:29:17
+12,examine thoroughly,2021-01-06 00:19:22
+40,register request,2021-01-06 00:35:35
+40,check ticket,2021-01-06 00:35:35
+15,examine casually,2021-01-06 01:33:01
+19,examine casually,2021-01-06 02:33:18
+11,check ticket,2021-01-06 03:20:26
+41,register request,2021-01-06 03:37:56
+35,examine casually,2021-01-06 04:11:25
+42,register request,2021-01-06 06:41:53
+26,check ticket,2021-01-06 07:11:19
+26,decide,2021-01-06 07:11:19
+38,check ticket,2021-01-06 08:19:42
+34,examine thoroughly,2021-01-06 08:40:46
+43,register request,2021-01-06 09:43:29
+43,check ticket,2021-01-06 09:43:29
+7,examine thoroughly,2021-01-06 11:02:29
+44,register request,2021-01-06 12:44:49
+39,examine casually,2021-01-06 14:18:38
+18,pay compensation,2021-01-06 14:32:34
+41,examine casually,2021-01-06 14:45:07
+29,examine casually,2021-01-06 14:46:42
+45,register request,2021-01-06 15:45:19
+10,decide,2021-01-06 15:57:24
+17,reinitiate request,2021-01-06 17:55:35
+46,register request,2021-01-06 18:41:55
+37,examine thoroughly,2021-01-06 19:00:22
+47,register request,2021-01-06 21:46:02
+47,check ticket,2021-01-06 23:45:36
+47,examine casually,2021-01-06 23:45:36
+48,register request,2021-01-07 00:40:28
+12,decide,2021-01-07 03:28:36
+49,register request,2021-01-07 03:46:50
+49,check ticket,2021-01-07 03:46:50
+41,check ticket,2021-01-07 05:23:51
+41,decide,2021-01-07 05:23:51
+41,reinitiate request,2021-01-07 05:23:51
+45,check ticket,2021-01-07 05:39:36
+27,decide,2021-01-07 06:37:58
+50,register request,2021-01-07 06:46:42
+51,register request,2021-01-07 09:43:40
+51,check ticket,2021-01-07 09:43:40
+34,decide,2021-01-07 09:45:17
+32,examine casually,2021-01-07 11:41:31
+42,check ticket,2021-01-07 11:50:15
+42,examine thoroughly,2021-01-07 11:50:15
+8,decide,2021-01-07 12:07:18
+52,register request,2021-01-07 12:37:26
+6,reinitiate request,2021-01-07 14:40:07
+13,examine casually,2021-01-07 15:11:10
+53,register request,2021-01-07 15:38:50
+16,decide,2021-01-07 16:20:43
+54,register request,2021-01-07 18:38:00
+44,check ticket,2021-01-07 18:41:22
+29,decide,2021-01-07 19:32:40
+55,register request,2021-01-07 21:34:51
+52,check ticket,2021-01-07 23:13:51
+52,examine casually,2021-01-07 23:13:51
+53,check ticket,2021-01-08 00:33:23
+56,register request,2021-01-08 00:36:22
+4,examine casually,2021-01-08 01:06:01
+36,examine thoroughly,2021-01-08 01:56:16
+57,register request,2021-01-08 03:34:02
+54,examine thoroughly,2021-01-08 03:53:00
+10,reject request,2021-01-08 04:19:41
+46,check ticket,2021-01-08 05:05:55
+21,examine casually,2021-01-08 05:10:07
+34,reinitiate request,2021-01-08 05:10:18
+55,check ticket,2021-01-08 05:59:39
+58,register request,2021-01-08 06:42:37
+33,examine casually,2021-01-08 07:37:49
+33,decide,2021-01-08 07:43:23
+6,check ticket,2021-01-08 09:17:20
+59,register request,2021-01-08 09:36:13
+48,check ticket,2021-01-08 09:47:17
+50,check ticket,2021-01-08 10:04:46
+41,check ticket,2021-01-08 10:29:35
+43,examine casually,2021-01-08 10:58:42
+43,decide,2021-01-08 10:58:42
+60,register request,2021-01-08 12:30:24
+39,decide,2021-01-08 13:51:00
+8,reject request,2021-01-08 14:01:35
+61,register request,2021-01-08 15:30:48
+62,register request,2021-01-08 18:27:04
+41,examine casually,2021-01-08 19:06:29
+41,decide,2021-01-08 19:06:29
+41,reinitiate request,2021-01-08 19:06:29
+25,examine thoroughly,2021-01-08 19:58:21
+63,register request,2021-01-08 21:29:02
+58,check ticket,2021-01-08 22:04:32
+58,examine thoroughly,2021-01-08 22:04:32
+56,examine thoroughly,2021-01-08 22:36:17
+17,check ticket,2021-01-08 23:15:39
+57,examine casually,2021-01-08 23:30:26
+61,check ticket,2021-01-08 23:35:23
+62,check ticket,2021-01-09 00:05:12
+64,register request,2021-01-09 00:27:26
+46,examine thoroughly,2021-01-09 02:47:42
+19,decide,2021-01-09 03:13:10
+65,register request,2021-01-09 03:31:49
+37,decide,2021-01-09 04:14:04
+4,decide,2021-01-09 04:35:07
+4,reject request,2021-01-09 04:35:07
+54,check ticket,2021-01-09 04:51:00
+49,examine thoroughly,2021-01-09 05:13:43
+66,register request,2021-01-09 06:34:21
+66,check ticket,2021-01-09 06:34:21
+9,reinitiate request,2021-01-09 07:12:48
+53,examine thoroughly,2021-01-09 08:47:25
+22,reinitiate request,2021-01-09 08:48:02
+22,check ticket,2021-01-09 08:48:02
+67,register request,2021-01-09 09:36:21
+27,reinitiate request,2021-01-09 12:07:26
+68,register request,2021-01-09 12:38:43
+31,check ticket,2021-01-09 13:29:23
+28,decide,2021-01-09 15:15:56
+13,decide,2021-01-09 15:19:11
+47,decide,2021-01-09 15:20:05
+47,pay compensation,2021-01-09 15:20:05
+69,register request,2021-01-09 15:41:05
+23,check ticket,2021-01-09 16:02:42
+53,decide,2021-01-09 17:55:11
+53,pay compensation,2021-01-09 17:55:11
+60,check ticket,2021-01-09 18:11:38
+26,reject request,2021-01-09 18:16:40
+54,decide,2021-01-09 18:38:23
+70,register request,2021-01-09 18:39:11
+15,decide,2021-01-09 19:56:35
+64,check ticket,2021-01-09 20:46:57
+64,examine thoroughly,2021-01-09 20:46:57
+71,register request,2021-01-09 21:43:50
+70,check ticket,2021-01-09 22:04:52
+68,check ticket,2021-01-09 23:38:09
+59,check ticket,2021-01-10 00:43:18
+6,examine casually,2021-01-10 00:48:25
+72,register request,2021-01-10 00:48:33
+63,check ticket,2021-01-10 01:04:17
+68,examine casually,2021-01-10 01:22:49
+33,pay compensation,2021-01-10 01:29:12
+71,check ticket,2021-01-10 03:00:57
+23,decide,2021-01-10 03:18:16
+73,register request,2021-01-10 03:45:20
+9,examine casually,2021-01-10 05:53:03
+74,register request,2021-01-10 06:47:22
+69,check ticket,2021-01-10 06:52:37
+44,examine thoroughly,2021-01-10 08:08:07
+40,examine casually,2021-01-10 08:09:14
+62,examine casually,2021-01-10 08:38:16
+75,register request,2021-01-10 09:45:10
+64,decide,2021-01-10 09:45:29
+11,decide,2021-01-10 09:56:46
+61,examine casually,2021-01-10 10:56:48
+34,check ticket,2021-01-10 10:57:52
+72,examine casually,2021-01-10 11:41:20
+65,check ticket,2021-01-10 11:51:21
+27,check ticket,2021-01-10 11:54:11
+9,check ticket,2021-01-10 11:59:10
+9,decide,2021-01-10 11:59:10
+58,decide,2021-01-10 12:14:30
+73,examine casually,2021-01-10 12:15:46
+21,decide,2021-01-10 12:31:31
+76,register request,2021-01-10 12:49:43
+0,decide,2021-01-10 14:26:02
+0,reinitiate request,2021-01-10 14:26:02
+49,decide,2021-01-10 15:21:25
+49,reinitiate request,2021-01-10 15:21:25
+77,register request,2021-01-10 15:46:39
+43,reject request,2021-01-10 17:17:04
+30,examine casually,2021-01-10 17:30:35
+67,check ticket,2021-01-10 17:38:32
+67,examine casually,2021-01-10 17:44:55
+76,check ticket,2021-01-10 17:52:57
+76,examine thoroughly,2021-01-10 17:52:57
+38,examine casually,2021-01-10 18:09:37
+78,register request,2021-01-10 18:50:43
+78,examine thoroughly,2021-01-10 18:50:43
+32,decide,2021-01-10 19:58:21
+32,pay compensation,2021-01-10 19:58:21
+79,register request,2021-01-10 21:48:26
+24,examine casually,2021-01-10 21:56:14
+7,decide,2021-01-10 22:30:09
+50,examine thoroughly,2021-01-10 22:47:34
+80,register request,2021-01-11 00:48:48
+21,reject request,2021-01-11 02:39:58
+52,decide,2021-01-11 02:57:12
+51,examine casually,2021-01-11 03:06:15
+81,register request,2021-01-11 03:52:40
+22,examine thoroughly,2021-01-11 04:00:50
+35,check ticket,2021-01-11 04:11:31
+5,reject request,2021-01-11 05:22:41
+82,register request,2021-01-11 06:55:37
+42,decide,2021-01-11 07:23:14
+57,check ticket,2021-01-11 07:53:05
+41,check ticket,2021-01-11 09:23:39
+75,check ticket,2021-01-11 09:49:03
+83,register request,2021-01-11 09:54:03
+14,pay compensation,2021-01-11 10:02:23
+15,reinitiate request,2021-01-11 10:06:27
+20,decide,2021-01-11 10:43:10
+20,pay compensation,2021-01-11 10:43:10
+79,check ticket,2021-01-11 11:15:54
+79,examine casually,2021-01-11 11:42:25
+29,pay compensation,2021-01-11 12:35:51
+84,register request,2021-01-11 12:56:07
+25,decide,2021-01-11 13:35:22
+13,reinitiate request,2021-01-11 15:02:04
+85,register request,2021-01-11 15:47:50
+63,examine casually,2021-01-11 16:32:31
+82,check ticket,2021-01-11 18:27:41
+82,examine casually,2021-01-11 18:27:41
+67,decide,2021-01-11 18:35:11
+86,register request,2021-01-11 18:50:22
+79,decide,2021-01-11 20:16:29
+31,decide,2021-01-11 20:29:11
+45,examine casually,2021-01-11 20:54:48
+62,decide,2021-01-11 20:55:42
+84,check ticket,2021-01-11 21:04:38
+48,examine casually,2021-01-11 21:35:02
+66,examine thoroughly,2021-01-11 21:35:45
+74,check ticket,2021-01-11 21:39:40
+87,register request,2021-01-11 21:50:32
+81,check ticket,2021-01-11 22:31:42
+88,register request,2021-01-12 00:54:16
+16,reinitiate request,2021-01-12 00:54:50
+74,examine casually,2021-01-12 01:55:37
+28,reject request,2021-01-12 02:03:25
+77,check ticket,2021-01-12 02:23:00
+31,pay compensation,2021-01-12 02:52:10
+37,pay compensation,2021-01-12 02:55:42
+76,decide,2021-01-12 03:02:33
+76,reinitiate request,2021-01-12 03:02:33
+76,check ticket,2021-01-12 03:02:33
+83,check ticket,2021-01-12 03:46:34
+89,register request,2021-01-12 03:54:04
+6,decide,2021-01-12 04:22:32
+1,pay compensation,2021-01-12 04:29:18
+87,check ticket,2021-01-12 05:20:02
+55,examine casually,2021-01-12 05:36:57
+78,check ticket,2021-01-12 05:51:42
+27,examine casually,2021-01-12 06:00:58
+27,decide,2021-01-12 06:00:58
+85,check ticket,2021-01-12 06:32:46
+90,register request,2021-01-12 06:58:53
+71,examine casually,2021-01-12 07:26:36
+90,check ticket,2021-01-12 08:31:39
+73,check ticket,2021-01-12 09:49:56
+91,register request,2021-01-12 09:52:23
+91,check ticket,2021-01-12 09:52:23
+80,examine casually,2021-01-12 10:10:51
+88,check ticket,2021-01-12 10:26:37
+42,pay compensation,2021-01-12 10:47:40
+59,examine thoroughly,2021-01-12 10:50:22
+48,decide,2021-01-12 11:22:22
+36,decide,2021-01-12 12:06:32
+92,register request,2021-01-12 12:52:45
+52,reinitiate request,2021-01-12 13:12:52
+25,reject request,2021-01-12 13:26:03
+23,reinitiate request,2021-01-12 14:39:06
+23,examine thoroughly,2021-01-12 14:39:06
+61,decide,2021-01-12 14:48:57
+61,reject request,2021-01-12 14:48:57
+60,examine thoroughly,2021-01-12 14:58:40
+38,decide,2021-01-12 15:03:00
+93,register request,2021-01-12 15:49:14
+44,decide,2021-01-12 16:55:31
+22,decide,2021-01-12 17:01:55
+94,register request,2021-01-12 18:49:12
+49,check ticket,2021-01-12 19:53:32
+49,examine casually,2021-01-12 19:53:32
+13,check ticket,2021-01-12 20:10:55
+95,register request,2021-01-12 21:50:24
+86,check ticket,2021-01-12 22:56:19
+96,register request,2021-01-13 00:51:34
+40,decide,2021-01-13 01:52:29
+77,examine casually,2021-01-13 02:36:22
+84,examine casually,2021-01-13 02:49:05
+84,decide,2021-01-13 02:49:05
+84,reject request,2021-01-13 02:49:05
+27,reject request,2021-01-13 03:14:58
+46,decide,2021-01-13 03:17:03
+46,reject request,2021-01-13 03:17:03
+17,examine casually,2021-01-13 03:33:49
+97,register request,2021-01-13 03:49:14
+30,decide,2021-01-13 04:30:22
+50,decide,2021-01-13 05:04:59
+50,reject request,2021-01-13 05:04:59
+92,check ticket,2021-01-13 05:26:42
+59,decide,2021-01-13 05:57:54
+98,register request,2021-01-13 06:45:13
+56,check ticket,2021-01-13 07:29:29
+6,reject request,2021-01-13 07:45:33
+52,check ticket,2021-01-13 08:54:54
+52,examine thoroughly,2021-01-13 08:54:54
+52,decide,2021-01-13 08:54:54
+99,register request,2021-01-13 09:42:30
+72,check ticket,2021-01-13 09:56:22
+11,reinitiate request,2021-01-13 10:24:33
+81,examine casually,2021-01-13 10:50:06
+80,check ticket,2021-01-13 10:55:47
+96,check ticket,2021-01-13 12:10:45
+95,check ticket,2021-01-13 12:42:44
+95,examine casually,2021-01-13 12:42:44
+97,check ticket,2021-01-13 13:59:34
+97,examine thoroughly,2021-01-13 13:59:34
+69,examine casually,2021-01-13 14:01:24
+78,decide,2021-01-13 14:50:17
+93,check ticket,2021-01-13 15:16:01
+76,examine casually,2021-01-13 15:57:06
+64,reject request,2021-01-13 15:57:27
+48,pay compensation,2021-01-13 16:38:51
+63,decide,2021-01-13 16:43:54
+94,check ticket,2021-01-13 17:10:30
+87,examine thoroughly,2021-01-13 17:16:43
+87,decide,2021-01-13 17:16:43
+92,examine thoroughly,2021-01-13 17:47:28
+79,reinitiate request,2021-01-13 17:58:37
+79,check ticket,2021-01-13 17:58:37
+24,decide,2021-01-13 20:13:32
+88,examine casually,2021-01-13 20:28:26
+88,decide,2021-01-13 20:28:26
+24,reinitiate request,2021-01-13 20:45:26
+89,check ticket,2021-01-13 21:41:53
+34,examine thoroughly,2021-01-13 21:45:01
+83,examine casually,2021-01-13 22:17:38
+65,examine thoroughly,2021-01-13 22:32:44
+68,decide,2021-01-14 00:06:39
+99,check ticket,2021-01-14 00:32:24
+74,decide,2021-01-14 00:33:43
+98,examine thoroughly,2021-01-14 02:37:08
+54,pay compensation,2021-01-14 02:46:25
+66,decide,2021-01-14 03:10:43
+16,check ticket,2021-01-14 04:59:52
+35,decide,2021-01-14 08:24:18
+39,reinitiate request,2021-01-14 09:58:39
+17,decide,2021-01-14 10:19:20
+95,decide,2021-01-14 10:42:21
+95,pay compensation,2021-01-14 10:42:21
+0,check ticket,2021-01-14 10:43:59
+91,examine thoroughly,2021-01-14 10:50:59
+11,examine casually,2021-01-14 11:33:48
+94,examine casually,2021-01-14 12:25:47
+94,decide,2021-01-14 12:25:47
+41,examine casually,2021-01-14 13:20:17
+15,check ticket,2021-01-14 13:25:46
+34,decide,2021-01-14 15:29:35
+7,reinitiate request,2021-01-14 16:19:18
+70,examine casually,2021-01-14 17:47:03
+81,decide,2021-01-14 18:24:18
+77,decide,2021-01-14 18:48:25
+98,check ticket,2021-01-14 21:46:08
+56,decide,2021-01-14 22:11:57
+63,pay compensation,2021-01-14 22:21:48
+83,decide,2021-01-14 22:50:40
+24,check ticket,2021-01-14 23:42:55
+86,examine casually,2021-01-15 00:23:27
+78,reject request,2021-01-15 01:40:10
+75,examine casually,2021-01-15 01:51:56
+65,decide,2021-01-15 01:59:51
+57,decide,2021-01-15 02:10:45
+66,reject request,2021-01-15 02:52:40
+86,decide,2021-01-15 04:18:36
+16,examine casually,2021-01-15 05:05:24
+16,decide,2021-01-15 05:05:24
+85,examine casually,2021-01-15 06:46:06
+19,reinitiate request,2021-01-15 07:00:33
+41,decide,2021-01-15 07:05:16
+41,reinitiate request,2021-01-15 07:05:16
+73,decide,2021-01-15 09:24:29
+62,reject request,2021-01-15 10:26:08
+12,reject request,2021-01-15 14:26:18
+23,check ticket,2021-01-15 16:42:54
+74,reinitiate request,2021-01-15 16:51:19
+74,check ticket,2021-01-15 16:51:19
+30,reject request,2021-01-15 18:02:44
+67,reject request,2021-01-15 19:06:31
+93,examine thoroughly,2021-01-15 19:11:50
+73,reinitiate request,2021-01-15 19:45:38
+73,check ticket,2021-01-15 19:45:38
+76,decide,2021-01-15 20:22:46
+19,check ticket,2021-01-15 21:20:30
+72,decide,2021-01-15 22:35:06
+57,reinitiate request,2021-01-15 23:06:49
+85,decide,2021-01-15 23:47:35
+71,decide,2021-01-16 01:32:39
+49,decide,2021-01-16 02:20:34
+85,reinitiate request,2021-01-16 02:46:32
+13,examine casually,2021-01-16 03:32:57
+13,decide,2021-01-16 03:32:57
+15,examine thoroughly,2021-01-16 04:29:42
+91,decide,2021-01-16 04:53:48
+40,reinitiate request,2021-01-16 05:01:01
+98,decide,2021-01-16 05:26:19
+51,decide,2021-01-16 05:26:24
+94,reinitiate request,2021-01-16 06:09:22
+7,check ticket,2021-01-16 08:19:46
+82,decide,2021-01-16 10:26:54
+82,reject request,2021-01-16 10:26:54
+41,check ticket,2021-01-16 14:48:18
+41,examine casually,2021-01-16 14:48:18
+44,reject request,2021-01-16 17:52:35
+57,examine casually,2021-01-16 17:55:00
+99,examine thoroughly,2021-01-16 18:27:27
+69,decide,2021-01-16 19:26:56
+80,decide,2021-01-16 19:46:52
+88,reinitiate request,2021-01-16 20:42:59
+55,decide,2021-01-16 21:08:05
+38,reinitiate request,2021-01-16 21:13:57
+38,check ticket,2021-01-16 21:13:57
+97,decide,2021-01-16 21:30:00
+71,reinitiate request,2021-01-16 22:37:01
+36,reinitiate request,2021-01-17 00:14:09
+89,examine thoroughly,2021-01-17 01:49:32
+9,reinitiate request,2021-01-17 01:54:04
+60,decide,2021-01-17 01:56:14
+96,examine thoroughly,2021-01-17 03:34:03
+97,reinitiate request,2021-01-17 04:13:33
+81,reinitiate request,2021-01-17 04:26:34
+36,check ticket,2021-01-17 04:46:24
+79,examine thoroughly,2021-01-17 08:08:42
+22,reject request,2021-01-17 09:19:13
+19,examine casually,2021-01-17 12:23:26
+19,decide,2021-01-17 12:23:26
+83,reject request,2021-01-17 13:02:27
+0,examine casually,2021-01-17 14:57:33
+57,check ticket,2021-01-17 17:19:42
+59,reinitiate request,2021-01-17 17:22:59
+58,reinitiate request,2021-01-17 18:07:56
+0,decide,2021-01-17 18:58:59
+97,examine thoroughly,2021-01-17 19:46:31
+89,decide,2021-01-17 20:12:09
+89,reinitiate request,2021-01-17 20:12:09
+39,check ticket,2021-01-17 20:14:47
+39,examine thoroughly,2021-01-17 20:14:47
+74,examine casually,2021-01-17 23:45:22
+94,check ticket,2021-01-18 00:57:19
+36,examine casually,2021-01-18 01:19:02
+52,reject request,2021-01-18 02:00:11
+79,decide,2021-01-18 03:47:58
+79,reject request,2021-01-18 03:47:58
+90,examine casually,2021-01-18 04:18:13
+90,decide,2021-01-18 04:18:13
+38,examine casually,2021-01-18 04:21:34
+74,decide,2021-01-18 04:46:01
+76,reject request,2021-01-18 05:26:38
+87,reject request,2021-01-18 06:24:55
+19,reinitiate request,2021-01-18 06:59:14
+88,check ticket,2021-01-18 07:10:54
+35,reinitiate request,2021-01-18 10:17:44
+58,check ticket,2021-01-18 10:42:44
+24,examine thoroughly,2021-01-18 11:12:17
+93,decide,2021-01-18 12:57:47
+35,examine thoroughly,2021-01-18 13:26:58
+35,check ticket,2021-01-18 13:26:58
+70,decide,2021-01-18 13:34:34
+11,check ticket,2021-01-18 14:58:18
+34,reject request,2021-01-18 15:26:10
+7,examine casually,2021-01-18 16:33:07
+40,check ticket,2021-01-18 17:29:59
+92,decide,2021-01-18 17:54:19
+38,decide,2021-01-18 19:36:36
+45,decide,2021-01-18 20:28:20
+36,decide,2021-01-18 21:30:27
+36,pay compensation,2021-01-18 21:30:27
+69,reinitiate request,2021-01-18 22:21:21
+93,reinitiate request,2021-01-18 23:57:58
+93,check ticket,2021-01-18 23:57:58
+9,check ticket,2021-01-19 00:00:08
+69,check ticket,2021-01-19 02:35:04
+69,examine casually,2021-01-19 02:35:04
+85,check ticket,2021-01-19 02:48:51
+65,reinitiate request,2021-01-19 05:11:23
+65,check ticket,2021-01-19 05:11:23
+75,decide,2021-01-19 05:17:41
+75,reinitiate request,2021-01-19 05:17:41
+89,check ticket,2021-01-19 06:10:36
+71,check ticket,2021-01-19 08:31:24
+41,decide,2021-01-19 08:33:30
+41,reject request,2021-01-19 08:33:30
+23,decide,2021-01-19 09:04:49
+86,reinitiate request,2021-01-19 10:08:42
+13,reinitiate request,2021-01-19 10:09:19
+13,check ticket,2021-01-19 12:55:15
+55,reject request,2021-01-19 14:12:26
+17,reject request,2021-01-19 15:57:38
+88,examine casually,2021-01-19 17:47:42
+73,examine thoroughly,2021-01-19 21:15:36
+91,reinitiate request,2021-01-19 22:12:26
+72,pay compensation,2021-01-19 22:50:43
+57,decide,2021-01-20 00:26:18
+35,decide,2021-01-20 00:48:17
+35,reinitiate request,2021-01-20 00:48:17
+80,check ticket,2021-01-20 01:16:00
+39,decide,2021-01-20 05:13:51
+59,check ticket,2021-01-20 05:54:58
+94,examine casually,2021-01-20 09:04:33
+86,examine casually,2021-01-20 09:25:48
+38,reject request,2021-01-20 09:26:57
+71,examine casually,2021-01-20 09:39:10
+96,decide,2021-01-20 09:50:13
+80,decide,2021-01-20 10:32:34
+85,decide,2021-01-20 12:11:18
+98,check ticket,2021-01-20 12:38:56
+7,decide,2021-01-20 12:47:57
+81,check ticket,2021-01-20 16:06:16
+81,examine casually,2021-01-20 16:54:13
+9,examine casually,2021-01-20 17:15:59
+16,pay compensation,2021-01-20 20:02:17
+58,examine casually,2021-01-20 21:58:15
+68,pay compensation,2021-01-21 00:46:30
+51,pay compensation,2021-01-21 00:51:47
+19,check ticket,2021-01-21 01:25:55
+7,pay compensation,2021-01-21 04:41:30
+71,decide,2021-01-21 05:12:47
+71,reject request,2021-01-21 05:12:47
+15,decide,2021-01-21 06:08:31
+60,check ticket,2021-01-21 06:46:28
+99,decide,2021-01-21 07:44:01
+73,decide,2021-01-21 09:31:44
+40,decide,2021-01-21 10:53:33
+90,pay compensation,2021-01-21 11:39:57

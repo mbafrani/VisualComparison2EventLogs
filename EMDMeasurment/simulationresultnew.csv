@@ -1,0 +1,452 @@
+case:concept:name,concept:name,time:timestamp
+0,Insert ticket,2021-01-01 01:00:00
+0,Closed,2021-01-01 01:00:00
+1,Insert ticket,2021-01-01 02:02:59
+2,Closed,2021-01-01 03:04:24
+3,Resolve ticket,2021-01-01 04:10:04
+4,Assign seriousness,2021-01-01 05:10:04
+4,Closed,2021-01-01 05:10:04
+4,Assign seriousness,2021-01-01 05:10:04
+4,Assign seriousness,2021-01-01 05:10:04
+5,Closed,2021-01-01 06:08:14
+5,Closed,2021-01-01 06:08:14
+6,Closed,2021-01-01 07:11:48
+6,Require upgrade,2021-01-01 07:11:48
+7,Create SW anomaly,2021-01-01 08:15:33
+8,Resolve ticket,2021-01-01 09:16:45
+9,Closed,2021-01-01 10:18:07
+10,Take in charge ticket,2021-01-01 11:20:28
+10,Assign seriousness,2021-01-01 11:20:28
+10,Closed,2021-01-01 11:20:28
+11,Take in charge ticket,2021-01-01 12:23:25
+12,Closed,2021-01-01 13:24:56
+12,Take in charge ticket,2021-01-01 13:24:56
+12,Wait,2021-01-01 13:24:56
+13,Closed,2021-01-01 14:26:57
+13,Take in charge ticket,2021-01-01 14:26:57
+14,Assign seriousness,2021-01-01 15:32:48
+15,Resolve ticket,2021-01-01 16:34:45
+16,Closed,2021-01-01 17:38:20
+17,Closed,2021-01-01 18:40:11
+18,Closed,2021-01-01 19:42:20
+19,Closed,2021-01-01 20:43:36
+19,Assign seriousness,2021-01-01 20:43:36
+19,Assign seriousness,2021-01-01 20:43:36
+20,Closed,2021-01-01 21:46:03
+21,Take in charge ticket,2021-01-01 22:49:14
+22,Wait,2021-01-01 23:50:33
+22,Take in charge ticket,2021-01-01 23:50:33
+23,Closed,2021-01-02 00:51:20
+24,Closed,2021-01-02 01:54:05
+25,Take in charge ticket,2021-01-02 02:56:40
+26,Wait,2021-01-02 04:00:37
+26,Closed,2021-01-02 04:00:37
+26,Wait,2021-01-02 04:00:37
+27,Closed,2021-01-02 05:04:27
+28,Closed,2021-01-02 06:06:24
+28,Take in charge ticket,2021-01-02 06:06:24
+29,Wait,2021-01-02 07:08:07
+30,Closed,2021-01-02 08:09:46
+28,Require upgrade,2021-01-02 08:41:35
+31,Take in charge ticket,2021-01-02 09:08:23
+32,Closed,2021-01-02 10:12:14
+33,Take in charge ticket,2021-01-02 11:16:17
+34,Assign seriousness,2021-01-02 12:19:32
+35,Assign seriousness,2021-01-02 13:18:31
+35,Wait,2021-01-02 13:18:31
+36,Take in charge ticket,2021-01-02 14:18:49
+37,Closed,2021-01-02 15:18:51
+38,Closed,2021-01-02 16:22:38
+38,Take in charge ticket,2021-01-02 16:22:38
+38,Take in charge ticket,2021-01-02 16:22:38
+39,Assign seriousness,2021-01-02 17:26:35
+40,Assign seriousness,2021-01-02 18:33:00
+41,Closed,2021-01-02 19:37:05
+42,Take in charge ticket,2021-01-02 20:42:07
+42,Wait,2021-01-02 20:42:07
+13,Closed,2021-01-02 21:43:25
+43,Assign seriousness,2021-01-02 21:45:46
+44,Take in charge ticket,2021-01-02 22:49:15
+44,Resolve ticket,2021-01-02 22:49:15
+45,Assign seriousness,2021-01-02 23:52:14
+45,Assign seriousness,2021-01-02 23:52:14
+46,Take in charge ticket,2021-01-03 00:52:55
+47,Assign seriousness,2021-01-03 01:58:02
+48,Take in charge ticket,2021-01-03 02:57:26
+48,Take in charge ticket,2021-01-03 02:57:26
+48,Wait,2021-01-03 02:57:26
+49,Closed,2021-01-03 04:03:53
+50,Closed,2021-01-03 05:06:28
+51,Wait,2021-01-03 06:07:21
+52,Wait,2021-01-03 07:06:22
+53,Assign seriousness,2021-01-03 08:09:53
+54,Wait,2021-01-03 09:12:04
+55,Resolve ticket,2021-01-03 10:12:53
+56,Wait,2021-01-03 11:16:28
+57,Closed,2021-01-03 12:17:47
+57,Closed,2021-01-03 12:17:47
+58,Assign seriousness,2021-01-03 13:25:33
+59,Assign seriousness,2021-01-03 14:24:28
+59,Assign seriousness,2021-01-03 14:24:28
+59,Assign seriousness,2021-01-03 14:24:28
+27,Wait,2021-01-03 14:52:14
+60,Take in charge ticket,2021-01-03 15:23:43
+61,Take in charge ticket,2021-01-03 16:26:38
+62,Take in charge ticket,2021-01-03 17:27:07
+63,Wait,2021-01-03 18:30:58
+2,Take in charge ticket,2021-01-03 18:35:43
+2,Wait,2021-01-03 18:35:43
+64,Take in charge ticket,2021-01-03 19:32:42
+65,Take in charge ticket,2021-01-03 20:37:58
+4,Closed,2021-01-03 20:50:36
+66,Closed,2021-01-03 21:42:09
+67,Closed,2021-01-03 22:46:00
+10,Assign seriousness,2021-01-03 23:09:04
+10,Closed,2021-01-03 23:09:04
+68,Assign seriousness,2021-01-03 23:50:05
+68,Closed,2021-01-03 23:50:05
+68,Closed,2021-01-03 23:50:05
+69,Take in charge ticket,2021-01-04 00:54:10
+19,Assign seriousness,2021-01-04 01:37:54
+70,Closed,2021-01-04 01:55:43
+71,Wait,2021-01-04 03:01:09
+72,Wait,2021-01-04 04:06:37
+73,Closed,2021-01-04 05:07:24
+74,Assign seriousness,2021-01-04 06:11:17
+74,Closed,2021-01-04 06:11:17
+10,Closed,2021-01-04 06:13:36
+10,Closed,2021-01-04 06:13:36
+75,Wait,2021-01-04 07:12:40
+25,Take in charge ticket,2021-01-04 07:15:32
+76,Assign seriousness,2021-01-04 08:18:02
+77,Wait,2021-01-04 09:18:55
+78,Closed,2021-01-04 10:24:01
+79,Closed,2021-01-04 11:25:21
+79,Take in charge ticket,2021-01-04 11:25:21
+80,Closed,2021-01-04 12:28:16
+80,Assign seriousness,2021-01-04 12:28:16
+81,Closed,2021-01-04 13:33:14
+82,Closed,2021-01-04 14:37:40
+83,Wait,2021-01-04 15:39:25
+84,Assign seriousness,2021-01-04 16:43:19
+85,Take in charge ticket,2021-01-04 17:41:09
+86,Resolve ticket,2021-01-04 18:45:20
+87,Take in charge ticket,2021-01-04 19:48:07
+88,Take in charge ticket,2021-01-04 20:53:01
+89,Closed,2021-01-04 21:55:34
+90,Closed,2021-01-04 23:01:06
+91,Assign seriousness,2021-01-04 23:59:58
+92,Closed,2021-01-05 01:02:53
+93,Take in charge ticket,2021-01-05 02:03:29
+94,Take in charge ticket,2021-01-05 03:06:10
+95,Take in charge ticket,2021-01-05 04:09:33
+96,Take in charge ticket,2021-01-05 05:12:56
+97,Take in charge ticket,2021-01-05 06:14:15
+98,Take in charge ticket,2021-01-05 07:14:33
+25,Take in charge ticket,2021-01-05 07:29:05
+99,Assign seriousness,2021-01-05 08:15:38
+75,Assign seriousness,2021-01-05 12:01:21
+1,Assign seriousness,2021-01-05 14:47:05
+79,Take in charge ticket,2021-01-05 20:58:23
+68,Assign seriousness,2021-01-06 16:32:22
+91,Take in charge ticket,2021-01-06 21:08:42
+99,Take in charge ticket,2021-01-06 21:38:42
+53,Take in charge ticket,2021-01-07 00:21:51
+53,Assign seriousness,2021-01-07 00:21:51
+53,Assign seriousness,2021-01-07 00:21:51
+80,Resolve ticket,2021-01-07 03:49:06
+73,Closed,2021-01-07 07:55:23
+78,Take in charge ticket,2021-01-07 11:24:02
+36,Wait,2021-01-07 13:40:04
+11,Closed,2021-01-07 16:01:31
+38,Wait,2021-01-07 17:12:14
+19,Assign seriousness,2021-01-07 19:50:25
+87,Resolve ticket,2021-01-07 22:06:14
+47,Closed,2021-01-07 22:48:44
+60,Closed,2021-01-08 02:03:36
+76,Take in charge ticket,2021-01-08 05:52:28
+9,Take in charge ticket,2021-01-08 05:54:01
+9,Resolve ticket,2021-01-08 05:54:01
+10,Closed,2021-01-08 14:10:20
+39,Assign seriousness,2021-01-08 16:23:52
+17,Closed,2021-01-08 17:33:17
+4,Take in charge ticket,2021-01-08 19:07:23
+4,Wait,2021-01-08 19:07:23
+4,Resolve ticket,2021-01-08 19:07:23
+32,Assign seriousness,2021-01-08 23:54:59
+32,Assign seriousness,2021-01-08 23:54:59
+46,Wait,2021-01-09 14:48:53
+23,Closed,2021-01-09 19:08:58
+23,Take in charge ticket,2021-01-09 19:08:58
+59,Wait,2021-01-09 19:33:15
+98,Closed,2021-01-09 20:20:11
+27,Resolve ticket,2021-01-10 01:18:48
+30,Closed,2021-01-10 05:02:17
+30,Wait,2021-01-10 05:02:17
+10,Assign seriousness,2021-01-10 08:32:36
+34,Take in charge ticket,2021-01-10 09:06:56
+24,Take in charge ticket,2021-01-10 17:03:56
+52,Take in charge ticket,2021-01-10 20:43:56
+41,Assign seriousness,2021-01-11 00:04:51
+65,Take in charge ticket,2021-01-11 02:38:09
+67,Wait,2021-01-11 03:57:00
+43,Resolve ticket,2021-01-11 05:20:36
+14,Take in charge ticket,2021-01-11 05:37:32
+14,Assign seriousness,2021-01-11 05:37:32
+82,Resolve ticket,2021-01-11 09:15:16
+59,Resolve ticket,2021-01-11 12:11:57
+96,Take in charge ticket,2021-01-11 12:56:06
+99,Assign seriousness,2021-01-11 19:19:07
+18,Assign seriousness,2021-01-11 21:44:49
+88,Take in charge ticket,2021-01-11 23:25:24
+76,Take in charge ticket,2021-01-12 01:16:56
+76,Take in charge ticket,2021-01-12 01:16:56
+99,Take in charge ticket,2021-01-12 11:12:50
+52,Take in charge ticket,2021-01-12 14:06:15
+29,Wait,2021-01-13 00:03:36
+71,Wait,2021-01-13 01:10:58
+80,Resolve ticket,2021-01-13 01:30:24
+68,Resolve ticket,2021-01-13 02:41:54
+84,Take in charge ticket,2021-01-13 04:40:08
+78,Resolve ticket,2021-01-13 06:02:43
+75,Assign seriousness,2021-01-13 06:39:28
+97,Closed,2021-01-13 08:02:54
+97,Assign seriousness,2021-01-13 08:02:54
+66,Closed,2021-01-13 09:43:14
+66,Assign seriousness,2021-01-13 09:43:14
+66,Wait,2021-01-13 09:43:14
+23,Wait,2021-01-13 13:17:20
+23,Resolve ticket,2021-01-13 13:17:20
+32,Closed,2021-01-13 15:44:30
+32,Take in charge ticket,2021-01-13 15:44:30
+32,Closed,2021-01-13 15:44:30
+18,Take in charge ticket,2021-01-13 16:16:22
+26,Take in charge ticket,2021-01-13 16:52:00
+26,Closed,2021-01-13 16:52:00
+0,Closed,2021-01-13 19:07:30
+0,Closed,2021-01-13 19:07:30
+84,Resolve ticket,2021-01-14 00:10:22
+61,Take in charge ticket,2021-01-14 01:49:15
+51,Take in charge ticket,2021-01-14 03:57:43
+53,Assign seriousness,2021-01-14 05:11:31
+97,Assign seriousness,2021-01-14 05:39:33
+93,Take in charge ticket,2021-01-14 14:42:24
+93,Assign seriousness,2021-01-14 14:42:24
+93,Assign seriousness,2021-01-14 14:42:24
+37,Resolve ticket,2021-01-14 18:29:20
+18,Resolve ticket,2021-01-14 19:53:25
+74,Assign seriousness,2021-01-14 22:24:54
+70,Closed,2021-01-15 03:44:31
+70,Resolve ticket,2021-01-15 03:44:31
+33,Closed,2021-01-15 11:52:33
+33,Closed,2021-01-15 11:52:33
+33,Closed,2021-01-15 11:52:33
+33,Assign seriousness,2021-01-15 11:52:33
+81,Assign seriousness,2021-01-15 14:23:38
+17,Assign seriousness,2021-01-15 16:08:33
+17,Closed,2021-01-15 16:08:33
+20,Take in charge ticket,2021-01-15 19:04:39
+45,Assign seriousness,2021-01-15 21:01:12
+64,Take in charge ticket,2021-01-16 03:41:17
+64,Resolve ticket,2021-01-16 03:41:17
+3,Resolve ticket,2021-01-16 11:10:13
+13,Resolve ticket,2021-01-16 12:58:17
+33,Take in charge ticket,2021-01-16 14:48:31
+24,Closed,2021-01-16 20:10:26
+39,Resolve ticket,2021-01-16 22:22:51
+65,Resolve ticket,2021-01-17 01:16:38
+17,Closed,2021-01-17 03:37:31
+5,Closed,2021-01-17 07:51:07
+97,Resolve ticket,2021-01-17 15:15:50
+2,Resolve ticket,2021-01-17 17:30:47
+29,Resolve ticket,2021-01-17 18:23:55
+36,Take in charge ticket,2021-01-17 18:45:25
+40,Take in charge ticket,2021-01-17 18:45:53
+40,Take in charge ticket,2021-01-17 18:45:53
+52,Closed,2021-01-17 23:55:14
+90,Assign seriousness,2021-01-18 06:32:00
+10,Resolve ticket,2021-01-18 10:36:52
+92,Resolve ticket,2021-01-18 14:23:10
+11,Closed,2021-01-18 19:49:59
+73,Closed,2021-01-19 00:19:24
+73,Assign seriousness,2021-01-19 00:19:24
+73,Resolve ticket,2021-01-19 00:19:24
+53,Assign seriousness,2021-01-19 09:01:39
+53,Closed,2021-01-19 09:01:39
+13,Take in charge ticket,2021-01-19 09:41:17
+13,Take in charge ticket,2021-01-19 09:41:17
+89,Closed,2021-01-19 18:21:41
+75,Assign seriousness,2021-01-19 20:23:44
+63,Resolve ticket,2021-01-20 09:22:17
+61,Take in charge ticket,2021-01-20 12:13:22
+25,Resolve ticket,2021-01-20 15:55:25
+50,Assign seriousness,2021-01-20 16:10:51
+18,Take in charge ticket,2021-01-20 18:36:34
+41,Assign seriousness,2021-01-20 21:45:59
+79,Closed,2021-01-21 09:42:35
+94,Take in charge ticket,2021-01-21 15:15:05
+94,Take in charge ticket,2021-01-21 15:15:05
+94,Take in charge ticket,2021-01-21 15:15:05
+94,Resolve ticket,2021-01-21 15:15:05
+47,Closed,2021-01-21 16:04:01
+1,Resolve ticket,2021-01-21 16:36:32
+24,Assign seriousness,2021-01-21 19:53:28
+24,Assign seriousness,2021-01-21 19:53:28
+50,Closed,2021-01-21 23:30:37
+72,Resolve ticket,2021-01-22 03:49:51
+99,Take in charge ticket,2021-01-22 08:21:41
+47,Assign seriousness,2021-01-23 03:47:21
+66,Resolve ticket,2021-01-23 05:22:25
+98,Take in charge ticket,2021-01-23 10:10:28
+99,Take in charge ticket,2021-01-23 23:54:19
+34,Take in charge ticket,2021-01-24 02:57:13
+20,Closed,2021-01-24 03:16:08
+5,Resolve ticket,2021-01-24 03:49:15
+45,Resolve ticket,2021-01-24 04:00:41
+34,Take in charge ticket,2021-01-24 05:41:38
+15,Assign seriousness,2021-01-24 14:05:03
+61,Take in charge ticket,2021-01-24 15:09:18
+93,Take in charge ticket,2021-01-24 17:04:31
+4,Resolve ticket,2021-01-25 01:10:26
+51,Resolve ticket,2021-01-25 01:15:34
+89,Take in charge ticket,2021-01-25 04:13:43
+30,Assign seriousness,2021-01-25 07:43:45
+53,Closed,2021-01-25 08:28:53
+90,Take in charge ticket,2021-01-25 10:32:20
+41,Assign seriousness,2021-01-25 15:17:19
+41,Resolve ticket,2021-01-25 15:17:19
+40,Take in charge ticket,2021-01-25 20:10:51
+42,Resolve ticket,2021-01-25 23:49:02
+32,Closed,2021-01-26 12:49:18
+49,Assign seriousness,2021-01-27 00:52:00
+32,Take in charge ticket,2021-01-27 03:44:03
+60,Assign seriousness,2021-01-28 00:11:00
+93,Assign seriousness,2021-01-28 00:44:37
+81,Resolve ticket,2021-01-28 00:58:24
+81,Assign seriousness,2021-01-28 00:58:24
+17,Closed,2021-01-29 03:28:08
+89,Assign seriousness,2021-01-29 05:53:47
+89,Take in charge ticket,2021-01-29 05:53:47
+89,Resolve ticket,2021-01-29 05:53:47
+28,Take in charge ticket,2021-01-29 18:01:13
+17,Closed,2021-01-29 21:17:28
+53,Closed,2021-01-30 02:44:27
+24,Resolve ticket,2021-01-30 06:29:34
+84,Resolve ticket,2021-01-30 07:27:36
+98,Take in charge ticket,2021-01-30 08:40:57
+98,Assign seriousness,2021-01-30 08:40:57
+73,Closed,2021-01-30 12:05:54
+73,Resolve ticket,2021-01-30 12:05:54
+35,Resolve ticket,2021-01-31 01:13:38
+96,Assign seriousness,2021-01-31 19:45:06
+74,Closed,2021-01-31 22:30:37
+72,Resolve ticket,2021-01-31 22:35:27
+32,Closed,2021-02-01 23:09:51
+17,Closed,2021-02-02 03:42:27
+54,Resolve ticket,2021-02-02 05:36:10
+81,Resolve ticket,2021-02-02 07:34:21
+61,Take in charge ticket,2021-02-02 16:13:40
+38,Take in charge ticket,2021-02-02 16:54:43
+63,Resolve ticket,2021-02-02 21:45:03
+57,Closed,2021-02-03 00:10:51
+53,Resolve ticket,2021-02-03 22:06:33
+93,Assign seriousness,2021-02-04 08:39:53
+79,Take in charge ticket,2021-02-06 12:02:23
+93,Assign seriousness,2021-02-07 10:08:18
+30,Assign seriousness,2021-02-07 12:11:08
+49,Resolve ticket,2021-02-08 07:00:59
+98,Take in charge ticket,2021-02-09 08:52:28
+20,Assign seriousness,2021-02-09 09:38:21
+96,Assign seriousness,2021-02-09 15:19:06
+74,Take in charge ticket,2021-02-10 01:27:26
+38,Resolve ticket,2021-02-10 02:21:51
+60,Assign seriousness,2021-02-11 15:22:50
+2,Take in charge ticket,2021-02-11 17:27:13
+86,Closed,2021-02-12 09:19:47
+32,Closed,2021-02-12 20:01:30
+92,Resolve ticket,2021-02-13 01:59:39
+72,Assign seriousness,2021-02-13 13:44:20
+78,Resolve ticket,2021-02-13 23:26:06
+78,Assign seriousness,2021-02-13 23:26:06
+37,Resolve ticket,2021-02-14 10:25:28
+15,Assign seriousness,2021-02-14 12:30:51
+94,Resolve ticket,2021-02-15 08:10:07
+20,Resolve ticket,2021-02-16 00:18:49
+43,Resolve ticket,2021-02-16 02:52:32
+57,Take in charge ticket,2021-02-16 13:58:08
+78,Assign seriousness,2021-02-17 02:30:13
+78,Assign seriousness,2021-02-18 00:05:58
+30,Resolve ticket,2021-02-18 13:07:19
+50,Assign seriousness,2021-02-18 23:27:47
+9,Resolve ticket,2021-02-19 06:55:22
+89,Take in charge ticket,2021-02-19 09:50:16
+68,Resolve ticket,2021-02-20 04:53:15
+98,Take in charge ticket,2021-02-20 11:26:27
+72,Resolve ticket,2021-02-21 02:39:07
+78,Assign seriousness,2021-02-22 09:20:07
+50,Resolve ticket,2021-02-22 15:14:13
+96,Resolve ticket,2021-02-23 07:03:40
+15,Take in charge ticket,2021-02-23 19:54:05
+25,Take in charge ticket,2021-02-25 01:18:46
+78,Assign seriousness,2021-02-25 23:15:19
+78,Closed,2021-02-25 23:15:19
+25,Resolve ticket,2021-02-26 18:31:14
+10,Resolve ticket,2021-02-28 07:24:30
+1,Resolve ticket,2021-02-28 16:20:53
+3,Assign seriousness,2021-03-01 17:45:55
+78,Resolve ticket,2021-03-02 00:22:54
+4,Resolve ticket,2021-03-02 15:53:23
+15,Closed,2021-03-02 17:14:37
+86,Closed,2021-03-04 02:20:07
+89,Resolve ticket,2021-03-04 02:27:18
+20,Resolve ticket,2021-03-04 13:53:32
+86,Closed,2021-03-07 10:55:11
+15,Take in charge ticket,2021-03-09 14:21:05
+15,Resolve ticket,2021-03-09 14:21:05
+89,Resolve ticket,2021-03-09 15:49:32
+35,Closed,2021-03-09 21:35:28
+35,Resolve ticket,2021-03-09 21:35:28
+41,Assign seriousness,2021-03-14 01:19:07
+84,Resolve ticket,2021-03-14 06:19:41
+3,Take in charge ticket,2021-03-17 04:09:23
+15,Resolve ticket,2021-03-18 07:23:10
+15,Resolve ticket,2021-03-18 07:23:10
+73,Assign seriousness,2021-03-18 22:58:57
+86,Resolve ticket,2021-03-19 16:54:40
+3,Take in charge ticket,2021-03-20 07:10:31
+92,Resolve ticket,2021-03-23 19:26:28
+50,Resolve ticket,2021-03-25 04:51:25
+9,Take in charge ticket,2021-03-25 17:47:14
+72,Assign seriousness,2021-03-26 16:54:27
+37,Resolve ticket,2021-03-28 05:09:51
+25,Assign seriousness,2021-03-28 08:46:14
+10,Resolve ticket,2021-03-28 18:48:33
+49,Assign seriousness,2021-03-28 20:40:48
+25,Take in charge ticket,2021-03-29 15:50:44
+96,Resolve ticket,2021-03-30 10:07:01
+68,Resolve ticket,2021-04-03 07:05:55
+73,Assign seriousness,2021-04-04 18:27:10
+72,Resolve ticket,2021-04-06 19:31:34
+25,Resolve ticket,2021-04-06 20:03:26
+9,Take in charge ticket,2021-04-06 23:33:06
+9,Take in charge ticket,2021-04-06 23:33:06
+49,Assign seriousness,2021-04-07 03:56:36
+92,Assign seriousness,2021-04-13 11:53:41
+92,Assign seriousness,2021-04-13 11:53:41
+20,Resolve ticket,2021-04-18 03:23:53
+50,Resolve ticket,2021-04-19 08:22:01
+92,Resolve ticket,2021-04-20 12:07:32
+73,Resolve ticket,2021-04-21 11:27:01
+25,Resolve ticket,2021-05-08 22:06:22
+96,Resolve ticket,2021-05-09 03:23:42
+35,Resolve ticket,2021-05-15 14:47:24
+35,Resolve ticket,2021-06-07 16:34:16
+20,Resolve ticket,2021-06-08 17:27:06
+92,Resolve ticket,2021-06-10 17:29:41
+96,Assign seriousness,2021-06-28 14:30:42
+96,Take in charge ticket,2021-06-28 14:30:42
+92,Assign seriousness,2021-07-03 00:29:58
+96,Assign seriousness,2021-07-06 22:03:06
+92,Resolve ticket,2021-07-07 12:48:27
+96,Assign seriousness,2021-07-20 00:55:04
+92,Resolve ticket,2021-08-27 18:19:36
