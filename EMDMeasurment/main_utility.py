@@ -1,9 +1,9 @@
 from pm4py.objects.log.util import dataframe_utils
 from pm4py.objects.conversion.log import converter as log_converter
-from MajidEMD.SMS import SMS
+from EMDMeasurment.SMS import SMS
 from pm4py.objects.log.importer.xes import importer as xes_importer_factory
 import time
-from MajidEMD.EMD import EMD
+from EMDMeasurment.EMD import EMD
 import pandas as pd
 
 
