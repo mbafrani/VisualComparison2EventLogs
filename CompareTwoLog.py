@@ -419,17 +419,17 @@ class Compare():
         if event_log.split('.')[-1] == 'csv':
             event_log =  compare.convert_log(event_log)
         elif event_log.split('.')[-1] == 'xes':
-            event_log = xes_importer.apply()
+            event_log = xes_importer.apply(event_log)
         if sim_log.split('.')[-1] == 'csv':
             sim_log = compare.convert_log(sim_log)
         elif sim_log.split('.')[-1] == 'xes':
-            sim_log = xes_importer.apply()
+            sim_log = xes_importer.apply(sim_log)
         return event_log,sim_log
 
 if __name__=="__main__":
 
     compare= Compare()
-    event_log, sim_log= compare.preprocess_logs("event_log1","event_log2")
+    event_log, sim_log= compare.preprocess_logs('event_log1','event_log2')
     conf_metrics =compare.conformance(event_log,sim_log)
     compare.conf_plot(conf_metrics)
     real_avg_serv_time, sim_avg_serv_time=compare.performance(event_log,sim_log,'1D')
