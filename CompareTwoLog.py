@@ -24,14 +24,14 @@ class Compare():
         return event_log
 
     def create_dfg(self,event_log, sim_log):
-        activities_count = pm4py.get_attribute_values(event_log, "concept:name")
+        activities_count = pm4py.get_event_attribute_values(event_log, "concept:name")
         act_list = list(activities_count.keys())
         event_log_dfg = pd.DataFrame(0, columns=act_list, index=act_list)
         event_log_dfg_count = dfg_discovery.apply(event_log)
         for act, act_freq in event_log_dfg_count.items():
             event_log_dfg[act[1]][act[0]] = act_freq
 
-        activities_count = pm4py.get_attribute_values(sim_log, "concept:name")
+        activities_count = pm4py.get_event_attribute_values(sim_log, "concept:name")
         act_list = list(activities_count.keys())
         event_log_sim_dfg = pd.DataFrame(0, columns=act_list, index=act_list)
         event_log_sim_dfg_count = dfg_discovery.apply(sim_log)
@@ -424,12 +424,13 @@ class Compare():
             sim_log = compare.convert_log(sim_log)
         elif sim_log.split('.')[-1] == 'xes':
             sim_log = xes_importer.apply(sim_log)
+
         return event_log,sim_log
 
 if __name__=="__main__":
 
     compare= Compare()
-    event_log, sim_log= compare.preprocess_logs('event_log1','event_log2')
+    event_log, sim_log = compare.preprocess_logs('event_log1','event_log2')
     conf_metrics =compare.conformance(event_log,sim_log)
     compare.conf_plot(conf_metrics)
     real_avg_serv_time, sim_avg_serv_time=compare.performance(event_log,sim_log,'1D')
