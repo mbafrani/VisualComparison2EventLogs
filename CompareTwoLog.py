@@ -46,7 +46,11 @@ class Compare():
         real_avg_serv_time= np.mean(all_case_durations_el) / 3600
         all_case_durations_sim= case_statistics.get_all_casedurations(sim_log)
         sim_avg_serv_time = np.mean(all_case_durations_sim) / 3600
-        finished_case =1
+        Measures = ['First Event Log', 'Second Event Log']
+        values = [real_avg_serv_time, sim_avg_serv_time]
+        conf_plt = plt.bar(Measures, values)
+        plt.xlabel('Average Service Time of Cases')
+        plt.ylabel("Hours")
         return real_avg_serv_time,sim_avg_serv_time
 
     def spectrum(self,event_log, sim_log,dfgs):
