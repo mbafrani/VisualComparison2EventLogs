@@ -38,6 +38,21 @@ def visualizationsService():
     return jsonify(resp)
 
 
+@app.route("/uploadService", methods=["POST"])
+def upload():
+    uuids = []
+    for file in request.files:
+        tmp_file = NamedTemporaryFile()
+        tmp_file.close()
+        fo = request.files[file]
+        fo.save(tmp_file.name)
+        this_uuid = str(uuid.uuid4())
+        print(tmp_file.name)
+        logs_dictio[this_uuid] = tmp_file.name
+        uuids.append(this_uuid)
+    return {"uuid1": uuids[0], "uuid2": uuids[1]}
+
+
 if __name__ == "__main__":
     logs_dictio["log1"] = "C:/running-example.xes"
     logs_dictio["log2"] = "C:/running-example.xes"
