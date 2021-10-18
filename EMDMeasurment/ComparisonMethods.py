@@ -16,6 +16,7 @@ from collections import defaultdict
 from tempfile import NamedTemporaryFile
 from pm4py.util import vis_utils
 import os
+import uuid
 
 
 class Compare():
@@ -448,20 +449,20 @@ class Compare():
         return event_log, sim_log
 
 
-def produce_visualizations_from_event_logs_paths(path1, path2):
-    conformance_file1 = NamedTemporaryFile(suffix=".html")
-    conformance_file1.close()
-    conformance_file1 = os.path.join("static/temp/", conformance_file1.name)
-    conformance_file2 = NamedTemporaryFile(suffix=".html")
-    conformance_file2.close()
-    conformance_file2 = os.path.join("static/temp/", conformance_file2.name)
+def get_full_path(file_name):
+    return os.path.join("static", "temp", os.path.basename(os.path.normpath(file_name)))
 
-    conformance_plt3 = NamedTemporaryFile(suffix=".svg")
-    conformance_plt3.close()
-    conformance_plt3 = os.path.join("static/temp/", conformance_plt3.name)
-    conformance_plt4 = NamedTemporaryFile(suffix=".svg")
-    conformance_plt4.close()
-    conformance_plt4 = os.path.join("static/temp/", conformance_plt4.name)
+
+def get_temp_file_name(extension):
+    return get_full_path(str(uuid.uuid4())+extension)
+
+
+def produce_visualizations_from_event_logs_paths(path1, path2):
+    conformance_file1 = get_temp_file_name(".html")
+    conformance_file2 = get_temp_file_name(".html")
+
+    conformance_plt3 = get_temp_file_name(".svg")
+    conformance_plt4 = get_temp_file_name(".svg")
 
     compare = Compare()
     event_log, sim_log = compare.preprocess_logs(path1, path2)
@@ -471,10 +472,7 @@ def produce_visualizations_from_event_logs_paths(path1, path2):
     dfgs = compare.create_dfg(event_log, sim_log)
     perf_dfgs = compare.spectrum(event_log, sim_log, dfgs)
 
-    spectrum_file = NamedTemporaryFile(suffix=".html")
-    spectrum_file.close()
-    spectrum_file = spectrum_file.name
-    spectrum_file = os.path.join("static/temp/", spectrum_file.name)
+    spectrum_file = get_temp_file_name(".html")
 
     compare.spectrum_visualize(event_log, sim_log, perf_dfgs, spectrum_file)
 
@@ -489,8 +487,8 @@ def produce_visualizations_from_event_logs_paths(path1, path2):
 
 
 def show_all_visualizations(ret_dict):
-    vis_utils.open_opsystem_image_viewer(ret_dict["conformance_file1"])
-    vis_utils.open_opsystem_image_viewer(ret_dict["conformance_file2"])
-    vis_utils.open_opsystem_image_viewer(ret_dict["conformance_plt3"])
-    vis_utils.open_opsystem_image_viewer(ret_dict["conformance_plt4"])
-    vis_utils.open_opsystem_image_viewer(ret_dict["spectrum_file"])
+    vis_utils.open_opsystem_image_viewer(get_full_path(ret_dict["conformance_file1"]))
+    vis_utils.open_opsystem_image_viewer(get_full_path(ret_dict["conformance_file2"]))
+    vis_utils.open_opsystem_image_viewer(get_full_path(ret_dict["conformance_plt3"]))
+    vis_utils.open_opsystem_image_viewer(get_full_path(ret_dict["conformance_plt4"]))
+    vis_utils.open_opsystem_image_viewer(get_full_path(ret_dict["spectrum_file"]))
