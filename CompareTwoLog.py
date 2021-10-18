@@ -5,7 +5,6 @@ from pm4py.objects.log.util import dataframe_utils
 from pm4py.objects.conversion.log import converter as log_converter
 from EMDMeasurment.main_utility import CompareConf
 import numpy as np
-from pm4py.statistics.traces.log import case_statistics
 from pm4py.statistics.performance_spectrum import algorithm as performance_spectrum
 from pm4py.algo.discovery.dfg import algorithm as dfg_discovery
 import matplotlib.pyplot as plt
@@ -15,6 +14,7 @@ from pm4py.statistics.traces.log import case_statistics
 from pm4py.objects.log.importer.xes import importer as xes_importer
 from collections import defaultdict
 from tempfile import NamedTemporaryFile
+from pm4py.util import vis_utils
 
 
 class Compare():
@@ -291,7 +291,7 @@ class Compare():
 
         return
 
-    def conf_plot(self,conf_metrics):
+    def conf_plot(self,conf_metrics,conformance_plt3,conformance_plt4):
         #Measures = ['EMD Similarity', 'New Behavior', 'Removed Bahavior', 'Change in #Variants']
         Measures = ['EMD Similarity', 'New Behavior', 'Removed Bahavior']
         #values = [conf_metrics[0], conf_metrics[1], conf_metrics[2], (conf_metrics[3])]
@@ -299,7 +299,8 @@ class Compare():
         conf_plt= plt.bar(Measures,values)
         plt.xlabel('Measures')
         plt.ylabel("Percentage")
-        plt.show()
+        #plt.show()
+        plt.savefig(conformance_plt3)
 
         conf_metrics[4]
         labels = 'Similar Behavior', 'New Behavior', 'Removed Bahavior'
@@ -314,12 +315,13 @@ class Compare():
         plt.legend(labels_exp, loc="best")
         plt.title('Comparing Two Logs (based on variants)')
         ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-        plt.show()
+        #plt.show()
+        plt.savefig(conformance_plt4)
 
         return
 
-    def spectrum_visualize(self, event_log_dfg_list, spectrum_file):
-        dfgs = compare.create_dfg(event_log, sim_log)
+    def spectrum_visualize(self, event_log, sim_log, event_log_dfg_list, spectrum_file):
+        dfgs = self.create_dfg(event_log, sim_log)
         event_log_dfg_list[0].sort_index(axis=0, inplace=True)
         event_log_dfg_list[0].sort_index(axis=1, inplace=True)
         event_log_dfg_list[1].sort_index(axis=0, inplace=True)
@@ -425,17 +427,18 @@ class Compare():
 
     def preprocess_logs(self,event_log,sim_log):
         if event_log.split('.')[-1] == 'csv':
-            event_log =  compare.convert_log(event_log)
+            event_log = self.convert_log(event_log)
         elif event_log.split('.')[-1] == 'xes':
             event_log = xes_importer.apply(event_log)
         if sim_log.split('.')[-1] == 'csv':
-            sim_log = compare.convert_log(sim_log)
+            sim_log = self.convert_log(sim_log)
         elif sim_log.split('.')[-1] == 'xes':
             sim_log = xes_importer.apply(sim_log)
 
         return event_log,sim_log
 
-if __name__=="__main__":
+
+def produce_visualizations_from_event_logs_paths(path1, path2):
     conformance_file1 = NamedTemporaryFile(suffix=".html")
     conformance_file1.close()
     conformance_file1 = conformance_file1.name
@@ -443,11 +446,18 @@ if __name__=="__main__":
     conformance_file2.close()
     conformance_file2 = conformance_file2.name
 
+    conformance_plt3 = NamedTemporaryFile(suffix=".svg")
+    conformance_plt3.close()
+    conformance_plt3 = conformance_plt3.name
+    conformance_plt4 = NamedTemporaryFile(suffix=".svg")
+    conformance_plt4.close()
+    conformance_plt4 = conformance_plt4.name
+
     compare= Compare()
-    event_log, sim_log = compare.preprocess_logs('C:/running-example.xes','C:/running-example.xes')
+    event_log, sim_log = compare.preprocess_logs(path1, path2)
     conf_metrics =compare.conformance(event_log,sim_log,conformance_file1,conformance_file2)
-    compare.conf_plot(conf_metrics)
-    real_avg_serv_time, sim_avg_serv_time=compare.performance(event_log,sim_log,'1D')
+    compare.conf_plot(conf_metrics, conformance_plt3, conformance_plt4)
+    #real_avg_serv_time, sim_avg_serv_time=compare.performance(event_log,sim_log,'1D')
     dfgs=compare.create_dfg(event_log,sim_log)
     perf_dfgs= compare.spectrum(event_log,sim_log,dfgs)
 
@@ -455,7 +465,26 @@ if __name__=="__main__":
     spectrum_file.close()
     spectrum_file = spectrum_file.name
 
-    compare.spectrum_visualize(perf_dfgs, spectrum_file)
-    print(conformance_file1)
-    print(conformance_file2)
-    print(spectrum_file)
+    compare.spectrum_visualize(event_log, sim_log, perf_dfgs, spectrum_file)
+
+    ret_dict = {}
+    ret_dict["conformance_file1"] = conformance_file1
+    ret_dict["conformance_file2"] = conformance_file2
+    ret_dict["conformance_plt3"] = conformance_plt3
+    ret_dict["conformance_plt4"] = conformance_plt4
+    ret_dict["spectrum_file"] = spectrum_file
+
+    return ret_dict
+
+
+def show_all_visualizations(ret_dict):
+    vis_utils.open_opsystem_image_viewer(ret_dict["conformance_file1"])
+    vis_utils.open_opsystem_image_viewer(ret_dict["conformance_file2"])
+    vis_utils.open_opsystem_image_viewer(ret_dict["conformance_plt3"])
+    vis_utils.open_opsystem_image_viewer(ret_dict["conformance_plt4"])
+    vis_utils.open_opsystem_image_viewer(ret_dict["spectrum_file"])
+
+
+if __name__=="__main__":
+    ret_dict = produce_visualizations_from_event_logs_paths("C:/running-example.xes", "C:/running-example.xes")
+    #show_all_visualizations(ret_dict)
