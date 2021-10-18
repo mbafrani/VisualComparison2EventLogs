@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script type="text/javascript" src="static/jquery.min.js"></script>
+        <script type="text/javascript" src="static/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="static/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/bootstrap-grid.min.css" />
+        <link rel="stylesheet" href="static/bootstrap-reboot.min.css" />
+    </head>
+    <body>
+		<div id="conformance_file1">
+		</div>
+		<div id="conformance_file2">
+		</div>
+		<div id="conformance_plt3">
+		</div>
+		<div id="conformance_plt4">
+		</div>
+		<div id="spectrum_file">
+		</div>		
+		<script type="text/javascript">
+			$.get("http://localhost:5000/visualizationsService", function(data) {
+				document.getElementById("conformance_file1").innerHTML = data["conformance_file1"];
+				document.getElementById("conformance_file2").innerHTML = data["conformance_file2"];
+				document.getElementById("conformance_plt3").innerHTML = data["conformance_plt3"];
+				document.getElementById("conformance_plt4").innerHTML = data["conformance_plt4"];
+				document.getElementById("spectrum_file").innerHTML = data["spectrum_file"];
+				console.log("ciao");
+				console.log(document.getElementById("conformance_file1").innerHTML);
+			});
+		</script>
+    </body>
+</html>
