@@ -68,6 +68,8 @@ def upload():
 
 
 if __name__ == "__main__":
+    if not os.path.exists(os.path.join("static", "temp")):
+        os.mkdir(os.path.join("static", "temp"))
     logs_dictio["log1"] = "C:/running-example.xes"
     logs_dictio["log2"] = "C:/running-example.xes"
     app.run(host='0.0.0.0')
