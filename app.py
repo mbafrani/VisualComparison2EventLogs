@@ -38,8 +38,8 @@ def upload_page():
 
 @app.route("/visualizationsService", methods=["GET"])
 def visualizationsService():
-    uid1 = request.args.get("uid1")
-    uid2 = request.args.get("uid2")
+    uid1 = request.args.get("uuid1")
+    uid2 = request.args.get("uuid2")
     if uid1 is None:
         uid1 = "log1"
     if uid2 is None:
@@ -70,6 +70,4 @@ def upload():
 if __name__ == "__main__":
     if not os.path.exists(os.path.join("static", "temp")):
         os.mkdir(os.path.join("static", "temp"))
-    logs_dictio["log1"] = "C:/running-example.xes"
-    logs_dictio["log2"] = "C:/running-example.xes"
     app.run(host='0.0.0.0')
