@@ -1,0 +1,49 @@
+<html>
+    <head>
+		<title>??? - Upload Page</title>
+        <script type="text/javascript" src="static/jquery.min.js"></script>
+        <script type="text/javascript" src="static/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="static/bootstrap.min.css" />
+        <link rel="stylesheet" href="static/bootstrap-grid.min.css" />
+        <link rel="stylesheet" href="static/bootstrap-reboot.min.css" />
+    </head>
+    <body>
+		<div>
+			<h3>Reference event log:</h3>
+			<input type="file" id="file1" name="file1" size="10"/>
+		</div>
+		<div>&nbsp;</div>
+		<div>
+			<h3>Simulated event log:</h3>
+			<input type="file" id="file2" name="file2" size="10" />
+		</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+        <input id="uploadbutton" type="button" value="Perform Visualization" onclick="javascript:postEventLog()" class="btn btn-primary" />
+        <script type="text/javascript">
+            function postEventLog() {
+                var formData = new FormData();
+                formData.append('file1', $('#file1')[0].files[0]);
+                formData.append('file2', $('#file2')[0].files[0]);
+
+				let hostname = window.location.hostname;
+				let port = window.location.port;
+
+                var url = "http://"+hostname+":"+port+"/uploadService";
+                console.log(url);
+
+               $.ajax({
+                type: "POST",
+                url: url,
+                data: formData,
+               processData: false,  // tell jQuery not to process the data
+               contentType: false,  // tell jQuery not to set contentType
+                success: function (data) {
+                    window.location.href = "comparison.html?uuid1="+data["uuid1"]+"&uuid2="+data["uuid2"];
+                }
+            });
+            }
+        </script>
+	</body>
+</html>
