@@ -455,8 +455,8 @@ class Compare():
             try:
                 sim_log = xes_importer.apply(sim_log)
             except:
-                sim_log = xes_importer.apply(sim_log)
-        
+                sim_log = self.convert_log(sim_log)
+
         return event_log, sim_log
 
 
