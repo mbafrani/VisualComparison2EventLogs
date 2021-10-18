@@ -1,5 +1,7 @@
 .idea/
 *pycache*
+static/temp
+static/temp/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
