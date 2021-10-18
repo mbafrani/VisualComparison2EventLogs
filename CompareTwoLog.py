@@ -13,6 +13,9 @@ import seaborn as sns
 import plotly.graph_objects as go
 from pm4py.statistics.traces.log import case_statistics
 from pm4py.objects.log.importer.xes import importer as xes_importer
+from collections import defaultdict
+from tempfile import NamedTemporaryFile
+
 
 class Compare():
 
@@ -79,7 +82,7 @@ class Compare():
 
         return event_log_dfg, sim_log_dfg, diff_dfg_perf
 
-    def conformance(self, event_log, sim_log):
+    def conformance(self, event_log, sim_log, conformance_file1, conformance_file2):
         compareconf= CompareConf()
         emd_measure, case_real, case_sim,df_distance = compareconf.compare_conf(event_log,sim_log)
         trace_real = list(set(case_real))
@@ -101,13 +104,13 @@ class Compare():
         conf_var_related_metr_list = [len(traces_similar_list),len(new_behavior_miss_from_origin),len(removed_behavior_miss_from_sim)]
 
 
-        self.visulaize_EMD_detial(df_distance,sorted_real_trace,sorted_sim_trace)
-        self.visualize_pairwise_variants(case_real,case_sim)
+        self.visulaize_EMD_detial(df_distance,sorted_real_trace,sorted_sim_trace,conformance_file1)
+        self.visualize_pairwise_variants(case_real,case_sim,conformance_file2)
 
        
         return round(1-emd_measure,2),percentage_new_beh,percentage_removed_beh,percentage_trace_diff ,conf_var_related_metr_list,case_real,case_sim
 
-    def visulaize_EMD_detial(self,df_distance,trace_real,trace_sim):
+    def visulaize_EMD_detial(self,df_distance,trace_real,trace_sim,conformance_file1):
         df_distance = df_distance[0:len(trace_real)]
         df_distance = df_distance[df_distance.columns[0:len(trace_sim)]]
         df_distance = df_distance[(df_distance.T != 0).any()]
@@ -190,10 +193,11 @@ class Compare():
                         )
         )
 
-        fig.show()
+        #fig.show()
+        fig.write_html(conformance_file1)
         return
 
-    def visualize_pairwise_variants(self,case_real,case_sim):
+    def visualize_pairwise_variants(self,case_real,case_sim,conformance_file2):
         fig = go.Figure()
         important_real = Counter(case_real).most_common()
         percentages_rea = {x: round(float(y) / len(case_real) * 100,2) for x, y in important_real}
@@ -202,7 +206,6 @@ class Compare():
         rek = set(list(percentages_rea)[0:10])
         res = set(list(percentages_sim)[0:10])
 
-        from collections import defaultdict
         percentages_rea = percentages_rea
         rek = set(list(percentages_rea)[0:10])
         res = set(list(percentages_sim)[0:10])
@@ -247,7 +250,8 @@ class Compare():
                           # annotations=[go.layout.Annotation(text=str(tx), align='right',   showarrow=False, xref='paper',yref='paper',x=1,y=0)],
                           legend_title="Real Event Log Variants",
                           font=dict(size=20, color="RebeccaPurple"), legend=dict(orientation="h"))
-        fig.show()
+        #fig.show()
+        fig.write_html(conformance_file2)
 
         return
 
@@ -255,7 +259,6 @@ class Compare():
 
         plt.figure()
         x, y = np.meshgrid(event_log_dfg_list[0].columns, event_log_dfg_list[0].index)
-        import plotly.graph_objects as go
         size = event_log_dfg_list[0].values.flatten() * 0.01
         fig = go.Figure(data=[go.Scatter(
             x=x.flatten(),
@@ -315,7 +318,7 @@ class Compare():
 
         return
 
-    def spectrum_visualize(self, event_log_dfg_list):
+    def spectrum_visualize(self, event_log_dfg_list, spectrum_file):
         dfgs = compare.create_dfg(event_log, sim_log)
         event_log_dfg_list[0].sort_index(axis=0, inplace=True)
         event_log_dfg_list[0].sort_index(axis=1, inplace=True)
@@ -388,7 +391,8 @@ class Compare():
         )
         data = [fig1, fig2, fig3]
         fig = go.Figure(data=data)
-        fig.show()
+        #fig.show()
+        fig.write_html(spectrum_file)
         return
 
     def variant_importance_vis(self,case_real,case_sim):
@@ -432,15 +436,26 @@ class Compare():
         return event_log,sim_log
 
 if __name__=="__main__":
+    conformance_file1 = NamedTemporaryFile(suffix=".html")
+    conformance_file1.close()
+    conformance_file1 = conformance_file1.name
+    conformance_file2 = NamedTemporaryFile(suffix=".html")
+    conformance_file2.close()
+    conformance_file2 = conformance_file2.name
 
     compare= Compare()
-    event_log, sim_log = compare.preprocess_logs('event_log1','event_log2')
-    conf_metrics =compare.conformance(event_log,sim_log)
+    event_log, sim_log = compare.preprocess_logs('C:/running-example.xes','C:/running-example.xes')
+    conf_metrics =compare.conformance(event_log,sim_log,conformance_file1,conformance_file2)
     compare.conf_plot(conf_metrics)
     real_avg_serv_time, sim_avg_serv_time=compare.performance(event_log,sim_log,'1D')
     dfgs=compare.create_dfg(event_log,sim_log)
     perf_dfgs= compare.spectrum(event_log,sim_log,dfgs)
-    compare.spectrum_visualize(perf_dfgs)
 
+    spectrum_file = NamedTemporaryFile(suffix=".html")
+    spectrum_file.close()
+    spectrum_file = spectrum_file.name
 
-
+    compare.spectrum_visualize(perf_dfgs, spectrum_file)
+    print(conformance_file1)
+    print(conformance_file2)
+    print(spectrum_file)
