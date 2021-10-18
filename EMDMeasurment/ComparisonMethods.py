@@ -15,6 +15,7 @@ from pm4py.objects.log.importer.xes import importer as xes_importer
 from collections import defaultdict
 from tempfile import NamedTemporaryFile
 from pm4py.util import vis_utils
+import os
 
 
 class Compare():
@@ -450,17 +451,17 @@ class Compare():
 def produce_visualizations_from_event_logs_paths(path1, path2):
     conformance_file1 = NamedTemporaryFile(suffix=".html")
     conformance_file1.close()
-    conformance_file1 = conformance_file1.name
+    conformance_file1 = os.path.join("static/temp/", conformance_file1.name)
     conformance_file2 = NamedTemporaryFile(suffix=".html")
     conformance_file2.close()
-    conformance_file2 = conformance_file2.name
+    conformance_file2 = os.path.join("static/temp/", conformance_file2.name)
 
     conformance_plt3 = NamedTemporaryFile(suffix=".svg")
     conformance_plt3.close()
-    conformance_plt3 = conformance_plt3.name
+    conformance_plt3 = os.path.join("static/temp/", conformance_plt3.name)
     conformance_plt4 = NamedTemporaryFile(suffix=".svg")
     conformance_plt4.close()
-    conformance_plt4 = conformance_plt4.name
+    conformance_plt4 = os.path.join("static/temp/", conformance_plt4.name)
 
     compare = Compare()
     event_log, sim_log = compare.preprocess_logs(path1, path2)
@@ -473,6 +474,7 @@ def produce_visualizations_from_event_logs_paths(path1, path2):
     spectrum_file = NamedTemporaryFile(suffix=".html")
     spectrum_file.close()
     spectrum_file = spectrum_file.name
+    spectrum_file = os.path.join("static/temp/", spectrum_file.name)
 
     compare.spectrum_visualize(event_log, sim_log, perf_dfgs, spectrum_file)
 
