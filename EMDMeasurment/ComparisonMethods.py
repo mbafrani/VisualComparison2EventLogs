@@ -446,6 +446,17 @@ class Compare():
         elif sim_log.split('.')[-1] == 'xes':
             sim_log = xes_importer.apply(sim_log)
 
+        if type(event_log) is str:
+            try:
+                event_log = xes_importer.apply(event_log)
+            except:
+                event_log = self.convert_log(event_log)
+        if type(sim_log) is str:
+            try:
+                sim_log = xes_importer.apply(sim_log)
+            except:
+                sim_log = xes_importer.apply(sim_log)
+        
         return event_log, sim_log
 
 
