@@ -16,9 +16,24 @@ CORS(app, expose_headers=["x-suggested-filename"])
 logs_dictio = {}
 
 
-@app.route("/visualizations.html")
-def visualizations_page():
-    return ""
+@app.route('/')
+def empty_path():
+    return redirect(url_for('upload_page'))
+
+
+@app.route('/index.html')
+def index():
+    return redirect(url_for('upload_page'))
+
+
+@app.route("/comparison.html")
+def comparison_page():
+    return render_template("comparison.html")
+
+
+@app.route("/upload.html")
+def upload_page():
+    return render_template("upload.html")
 
 
 @app.route("/visualizationsService", methods=["GET"])
@@ -47,7 +62,6 @@ def upload():
         fo = request.files[file]
         fo.save(tmp_file.name)
         this_uuid = str(uuid.uuid4())
-        print(tmp_file.name)
         logs_dictio[this_uuid] = tmp_file.name
         uuids.append(this_uuid)
     return {"uuid1": uuids[0], "uuid2": uuids[1]}
