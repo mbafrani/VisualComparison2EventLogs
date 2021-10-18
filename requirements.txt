@@ -8,3 +8,6 @@ multiset==2.1.1
 pyfpgrowth==1.0
 python_Levenshtein==0.12.2
 seaborn==0.11.2
+frozendict==2.0.6
+Flask==2.0.2
+Flask-Cors==3.0.10
