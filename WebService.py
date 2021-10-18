@@ -35,9 +35,6 @@ def visualizationsService():
 
     resp = produce_visualizations_from_event_logs_paths(log_path1, log_path2)
 
-    for key in resp:
-        resp[key] = open(resp[key], "r").read()
-
     return jsonify(resp)
 
 
