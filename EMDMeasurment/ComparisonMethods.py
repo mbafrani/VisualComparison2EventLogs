@@ -3,11 +3,15 @@ import pm4py
 import pandas as pd
 from pm4py.objects.log.util import dataframe_utils
 from pm4py.objects.conversion.log import converter as log_converter
-from EMDMeasurment.main_utility import CompareConf
+#from EMDMeasurment.main_utility import CompareConf
+from .main_utility import  CompareConf
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
 from pm4py.statistics.performance_spectrum import algorithm as performance_spectrum
 from pm4py.algo.discovery.dfg import algorithm as dfg_discovery
 import matplotlib.pyplot as plt
+plt.switch_backend('agg')
 import seaborn as sns
 import plotly.graph_objects as go
 from pm4py.statistics.traces.log import case_statistics
@@ -190,9 +194,9 @@ class Compare():
         fig.update_layout(
             title="Earth Mover Distance",
             margin=dict(l=0, r=0, b=0, t=30),
-            yaxis_title="Frequent Variants (Real Event Log)",
-            xaxis_title="Frequent Variants (Simulated Event Log)",
-            legend_title="Real Event Log Variants:",
+            yaxis_title="Frequent Variants (First Event Log)",
+            xaxis_title="Frequent Variants (Second Event Log)",
+            legend_title="First Event Log Variants:",
             font=dict(size=12, color="RebeccaPurple"),
             legend=dict(orientation="v",
                         font=dict(
@@ -234,7 +238,7 @@ class Compare():
         fig = go.Figure()
         fig.add_trace(
             go.Funnel(
-                name='Real Event Log',
+                name='First Event Log',
                 orientation="h",
                 hovertext=list(h.keys()),
                 hoverinfo='text',
@@ -243,7 +247,7 @@ class Compare():
                 x=[i[0] for i in h.values()],
                 textposition="inside", marker={"color": "blue"}))
         fig.add_trace(go.Funnel(
-            name='Simulated',
+            name='Second Event Log',
             orientation="h",
             hovertext=list(h.keys()),
             hoverinfo='text',
@@ -253,10 +257,10 @@ class Compare():
             textposition="inside", marker={"color": "purple"}))
 
         fig.update_layout(title="Compare Frequency of Variants",
-                          yaxis_title="Most Frequent Variants in the Real Event Log",
+                          yaxis_title="Most Frequent Variants in the First Event Log",
                           xaxis_title="Frequency of Variants (%)",
                           # annotations=[go.layout.Annotation(text=str(tx), align='right',   showarrow=False, xref='paper',yref='paper',x=1,y=0)],
-                          legend_title="Real Event Log Variants",
+                          legend_title="First Event Log Variants",
                           font=dict(size=20, color="RebeccaPurple"), legend=dict(orientation="h"))
         # fig.show()
         fig.write_html(conformance_file2)
@@ -306,16 +310,19 @@ class Compare():
         Measures = ['EMD Similarity', 'New Behavior', 'Removed Bahavior']
         # values = [conf_metrics[0], conf_metrics[1], conf_metrics[2], (conf_metrics[3])]
         values = [conf_metrics[0], conf_metrics[1], conf_metrics[2]]
-        conf_plt = plt.bar(Measures, values)
-        plt.xlabel('Measures')
-        plt.ylabel("Percentage")
-        # plt.show()
-        plt.savefig(conformance_plt3)
+        try:
+            conf_plt = plt.bar(Measures, values)
+            plt.xlabel('Measures')
+            plt.ylabel("Percentage")
+            # plt.show()
+            plt.savefig(conformance_plt3)
+        except:
+            pass
 
         conf_metrics[4]
         labels = 'Similar Behavior', 'New Behavior', 'Removed Bahavior'
-        labels_exp = ['Intersection of Two Event Logs', 'Variants only in the Simulated Log',
-                      'Variants only in the Real Event Log']
+        labels_exp = ['Intersection of Two Event Logs', 'Variants only in the Second Log',
+                      'Variants only in the First Event Log']
         sizes = [conf_metrics[4][0], conf_metrics[4][1], conf_metrics[4][2]]
         explode = (0, 0.1, 0.1)  # only "explode" the 2nd slice (i.e. 'Hogs')
 
@@ -350,7 +357,7 @@ class Compare():
                                       sizeref=2. * max(sizeorg) / (50. ** 2),
                                       sizemin=4,
                                       opacity=opac,
-                                      ), name='Real Process'
+                                      ), name='First Process'
                           )
         x, y = np.meshgrid(event_log_dfg_list[1].columns, event_log_dfg_list[1].index)
         size = event_log_dfg_list[1].values.flatten() / 3600
@@ -374,7 +381,7 @@ class Compare():
                 sizemin=4,
                 opacity=opacsim
             )
-            , name='Simulated Process'
+            , name='Second Process'
         )
         diff = (event_log_dfg_list[0] - event_log_dfg_list[1])
         x, y = np.meshgrid(diff.columns, diff.index)
@@ -428,8 +435,8 @@ class Compare():
 
         plt.legend(loc="lower center", bbox_to_anchor=(0.5, -0.15), ncol=2, prop={'size': 8})
         ax2 = ax.twinx()
-        ax.set_ylabel("Real Event Log %", color="blue", fontsize=14)
-        ax2.set_ylabel("Simulated Event Log %", color="purple", fontsize=14)
+        ax.set_ylabel("First Event Log %", color="blue", fontsize=14)
+        ax2.set_ylabel("Second Event Log %", color="purple", fontsize=14)
         ax.set_ylim(0, 10 + 100 * (Counter(case_real).most_common()[0][1]) / len(case_real))
         ax2.set_ylim(0, 10 + 100 * (Counter(case_sim).most_common()[0][1]) / len(case_sim))
         ax.set_xlim()
