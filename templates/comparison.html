@@ -8,37 +8,38 @@
         <link rel="stylesheet" href="static/bootstrap-reboot.min.css" />
     </head>
     <body>
-		<span>
+		<div style="width: 100%; height: 5%; background-color: blue; color: white">
 		  <a class="navbar-brand" href="javascript:showDiv('conformance_file1')">EMD Comparison</a>
 		  <a class="navbar-brand" href="javascript:showDiv('conformance_file2')">Variants Frequency Comparison</a>
 		  <a class="navbar-brand" href="javascript:showDiv('conformance_plt4')">Overlap between Logs</a>
 		  <a class="navbar-brand" href="javascript:showDiv('spectrum_file')">Aggregated Performance Spectrum</a>
-		</span>
+		</div>
 		<div id="conformance_file1" style="display: none">
 		<p>EARTH MOVER DISTANCE</p>
-		<iframe id="conformance_file1A" src="#" style="width: 100%; height: 90%;" scrolling="yes">
-		</iframe>
+		<embed id="conformance_file1A" src="#" style="width: 100%; height: 90%;" scrolling="yes">
+		</embed>
 		</div>
 		<div id="conformance_file2" style="display: none">
 		<p>VARIANTS FREQUENCY COMPARISON</p>
-		<iframe id="conformance_file2A" src="#" style="width: 100%; height: 90%;" scrolling="yes">
-		</iframe>
+		<embed id="conformance_file2A" src="#" style="width: 100%; height: 90%;" scrolling="yes">
+		</embed>
 		</div>
 		<div id="conformance_plt3" style="display: none">
-		<iframe id="conformance_plt3A" src="#" style="width: 100%; height: 90%;"  scrolling="yes">
-		</iframe>
+		<embed id="conformance_plt3A" src="#" style="width: 100%; height: 90%;"  scrolling="yes">
+		</embed>
 		</div>
 		<div id="conformance_plt4" style="display: none">
 		<p>OVERLAP BETWEEN LOGS</p>
-		<iframe id="conformance_plt4A" src="#" style="width: 100%; height: 90%;"  scrolling="yes">
-		</iframe>
+		<embed id="conformance_plt4A" src="#" style="width: 100%; height: 90%;"  scrolling="yes">
+		</embed>
 		</div>
 		<div id="spectrum_file" style="display: none">
 		<p>PERFORMANCE SPECTRUM</p>
-		<iframe id="spectrum_fileA" src="#" style="width: 100%; height: 90%;"  scrolling="yes">
-		</iframe>
+		<embed id="spectrum_fileA" src="#" style="width: 100%; height: 90%;"  scrolling="yes">
+		</embed>
 		</div>
 		<script type="text/javascript">
+
         var parseQueryString = function() {
 
             var str = window.location.search;
