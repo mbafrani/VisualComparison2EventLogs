@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="static/bootstrap.min.css" />
         <link rel="stylesheet" href="static/bootstrap-grid.min.css" />
         <link rel="stylesheet" href="static/bootstrap-reboot.min.css" />
+        <script type="text/javascript" src="static/sweetalert2.all.min.js"></script>
     </head>
     <body>
 		<nav class="navbar navbar-dark bg-primary fixed-top">
@@ -91,6 +92,12 @@
 				document.getElementById("conformance_plt4A").src = data["conformance_plt4"];
 				document.getElementById("spectrum_fileA").src = data["spectrum_file"];
 				showDiv("conformance_file1");
+			}).fail(function() {
+				Swal.fire({
+				  icon: 'error',
+				  title: 'Oops...',
+				  text: 'Something went wrong in the processing of the event logs! Please contact the authors to signal the issue.',
+				})
 			});
 		</script>
     </body>

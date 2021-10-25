@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="static/bootstrap.min.css" />
         <link rel="stylesheet" href="static/bootstrap-grid.min.css" />
         <link rel="stylesheet" href="static/bootstrap-reboot.min.css" />
+        <script type="text/javascript" src="static/sweetalert2.all.min.js"></script>
     </head>
     <body>
 		<img src="static/pads_rwth.svg"></img>
@@ -45,7 +46,14 @@
                contentType: false,  // tell jQuery not to set contentType
                 success: function (data) {
                     window.location.href = "comparison.html?uuid1="+data["uuid1"]+"&uuid2="+data["uuid2"];
-                }
+                },
+				error: function(error) {
+					Swal.fire({
+					  icon: 'error',
+					  title: 'Oops...',
+					  text: 'Something went wrong in the processing of the event logs! Please contact the authors to signal the issue.',
+					})
+				}
             });
             }
         </script>
