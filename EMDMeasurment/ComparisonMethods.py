@@ -311,11 +311,13 @@ class Compare():
         # values = [conf_metrics[0], conf_metrics[1], conf_metrics[2], (conf_metrics[3])]
         values = [conf_metrics[0], conf_metrics[1], conf_metrics[2]]
         try:
+            plt.clf()
             conf_plt = plt.bar(Measures, values)
             plt.xlabel('Measures')
             plt.ylabel("Percentage")
             # plt.show()
             plt.savefig(conformance_plt3)
+            plt.clf()
         except:
             pass
 
@@ -326,6 +328,7 @@ class Compare():
         sizes = [conf_metrics[4][0], conf_metrics[4][1], conf_metrics[4][2]]
         explode = (0, 0.1, 0.1)  # only "explode" the 2nd slice (i.e. 'Hogs')
 
+        plt.clf()
         fig1, ax1 = plt.subplots()
         ax1.pie(sizes, explode=explode, labels=labels, colors=['skyblue', 'purple', 'pink'], autopct='%1.1f%%',
                 shadow=True, startangle=90)
@@ -334,6 +337,7 @@ class Compare():
         ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
         # plt.show()
         plt.savefig(conformance_plt4)
+        plt.clf()
 
         return
 
