@@ -22,27 +22,27 @@
 		</div>
 		<div id="conformance_file1" style="display: none">
 		<p>EARTH MOVER'S DISTANCE</p>
-		<embed id="conformance_file1A" src="#" style="width: 100%; height: 88%;" scrolling="yes">
+		<embed id="conformance_file1A" src="static/empty.html" style="width: 100%; height: 88%;" scrolling="yes">
 		</embed>
 		</div>
 		<div id="conformance_file2" style="display: none">
 		<p>VARIANTS FREQUENCY COMPARISON</p>
-		<embed id="conformance_file2A" src="#" style="width: 100%; height: 88%;" scrolling="yes">
+		<embed id="conformance_file2A" src="static/empty.html" style="width: 100%; height: 88%;" scrolling="yes">
 		</embed>
 		</div>
 		<div id="conformance_plt3" style="display: none">
 			<p>EARTH MOVER'S DISTANCE MEASUREMENT</p>
-		<embed id="conformance_plt3A" src="#" style="width: 100%; height: 88%;"  scrolling="yes">
+		<embed id="conformance_plt3A" src="static/empty.html" style="width: 100%; height: 88%;"  scrolling="yes">
 		</embed>
 		</div>
 		<div id="conformance_plt4" style="display: none">
 		<p>OVERLAP BETWEEN LOGS</p>
-		<embed id="conformance_plt4A" src="#" style="width: 100%; height: 88%;"  scrolling="yes">
+		<embed id="conformance_plt4A" src="static/empty.html" style="width: 100%; height: 88%;"  scrolling="yes">
 		</embed>
 		</div>
 		<div id="spectrum_file" style="display: none">
 		<p>PERFORMANCE SPECTRUM</p>
-		<embed id="spectrum_fileA" src="#" style="width: 100%; height: 88%;"  scrolling="yes">
+		<embed id="spectrum_fileA" src="static/empty.html" style="width: 100%; height: 88%;"  scrolling="yes">
 		</embed>
 		</div>
 		<script type="text/javascript">
@@ -88,12 +88,12 @@
 			console.log(targetUrl);
 			
 			$.get(targetUrl, function(data) {
+				showDiv("conformance_file1");
 				document.getElementById("conformance_file1A").src = data["conformance_file1"];
 				document.getElementById("conformance_file2A").src = data["conformance_file2"];
 				document.getElementById("conformance_plt3A").src = data["conformance_plt3"];
 				document.getElementById("conformance_plt4A").src = data["conformance_plt4"];
 				document.getElementById("spectrum_fileA").src = data["spectrum_file"];
-				showDiv("conformance_file1");
 			}).fail(function() {
 				Swal.fire({
 				  icon: 'error',
