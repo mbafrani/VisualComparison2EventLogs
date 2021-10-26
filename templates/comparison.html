@@ -21,31 +21,37 @@
 			&nbsp;
 		</div>
 		<div id="conformance_file1" style="display: none">
-		<p>EARTH MOVER'S DISTANCE</p>
+		<p>EARTH MOVER'S DISTANCE <a href="javascript:expand('conformance_file1')">expand</a></p>
 		<embed id="conformance_file1A" src="static/empty.html" style="width: 100%; height: 88%;" scrolling="yes">
 		</embed>
 		</div>
 		<div id="conformance_file2" style="display: none">
-		<p>VARIANTS FREQUENCY COMPARISON</p>
+		<p>VARIANTS FREQUENCY COMPARISON <a href="javascript:expand('conformance_file2')">expand</a></p>
 		<embed id="conformance_file2A" src="static/empty.html" style="width: 100%; height: 88%;" scrolling="yes">
 		</embed>
 		</div>
 		<div id="conformance_plt3" style="display: none">
-			<p>EARTH MOVER'S DISTANCE MEASUREMENT</p>
+			<p>EARTH MOVER'S DISTANCE MEASUREMENT <a href="javascript:expand('conformance_plt3')">expand</a></p>
 		<embed id="conformance_plt3A" src="static/empty.html" style="width: 100%; height: 88%;"  scrolling="yes">
 		</embed>
 		</div>
 		<div id="conformance_plt4" style="display: none">
-		<p>OVERLAP BETWEEN LOGS</p>
+		<p>OVERLAP BETWEEN LOGS <a href="javascript:expand('conformance_plt4')">expand</a></p>
 		<embed id="conformance_plt4A" src="static/empty.html" style="width: 100%; height: 88%;"  scrolling="yes">
 		</embed>
 		</div>
 		<div id="spectrum_file" style="display: none">
-		<p>PERFORMANCE SPECTRUM</p>
+		<p>PERFORMANCE SPECTRUM <a href="javascript:expand('spectrum_file')">expand</a></p>
 		<embed id="spectrum_fileA" src="static/empty.html" style="width: 100%; height: 88%;"  scrolling="yes">
 		</embed>
 		</div>
 		<script type="text/javascript">
+
+		var corr = {};
+
+		function expand(tab) {
+			window.open(corr[tab], '_blank');
+		}
 
         var parseQueryString = function() {
 
@@ -89,6 +95,7 @@
 			
 			$.get(targetUrl, function(data) {
 				showDiv("conformance_file1");
+				corr = data;
 				document.getElementById("conformance_file1A").src = data["conformance_file1"];
 				document.getElementById("conformance_file2A").src = data["conformance_file2"];
 				document.getElementById("conformance_plt3A").src = data["conformance_plt3"];
