@@ -13,6 +13,7 @@
 		<h3>Interactive Business Process Comparison Using Conformance and Performance Insights</h3>
 		<p>To start, please upload one <b>reference event log</b> and one event log to <b>compare</b> against the first.</p>
 		<p>Then, click the button <b>Perform Visualization</b> to start the analysis.</p>
+		<p>Alternatively, click the button <b>Perform Demo</b> to perform a demo analysis on some synthetic data sets.</p>
 		<div>
 			<h3>Reference event log:</h3>
 			<input type="file" id="file1" name="file1" size="10"/>
@@ -23,10 +24,17 @@
 			<input type="file" id="file2" name="file2" size="10" />
 		</div>
 		<div>&nbsp;</div>
-		<div>&nbsp;</div>
-		<div>&nbsp;</div>
         <input id="uploadbutton" type="button" value="Perform Visualization" onclick="javascript:postEventLog()" class="btn btn-primary" />
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+		<div><p>The following demo performs a visualization on example event logs.</p></div>
+		<button onclick="javascript:performDemo()" class="btn btn-primary">Perform Demo</button>
         <script type="text/javascript">
+        	function performDemo() {
+        		window.location.href = "comparison.html?uuid1=log1&uuid2=log2";
+        	}
+
             function postEventLog() {
                 var formData = new FormData();
                 formData.append('file1', $('#file1')[0].files[0]);
