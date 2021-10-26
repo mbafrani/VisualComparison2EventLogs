@@ -92,9 +92,10 @@
 			
 			let targetUrl = "http://"+hostname+":"+port+"/visualizationsService?uuid1="+uuid1+"&uuid2="+uuid2;
 			console.log(targetUrl);
+
+			showDiv("conformance_file1");
 			
 			$.get(targetUrl, function(data) {
-				showDiv("conformance_file1");
 				corr = data;
 				document.getElementById("conformance_file1A").src = data["conformance_file1"];
 				document.getElementById("conformance_file2A").src = data["conformance_file2"];
