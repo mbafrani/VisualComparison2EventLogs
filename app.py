@@ -67,9 +67,13 @@ def upload():
     return {"uuid1": uuids[0], "uuid2": uuids[1]}
 
 
+logs_dictio["log1"] = os.path.join("SampleEventLogs&SimulatedER2021", "running-example.xes")
+logs_dictio["log2"] = os.path.join("SampleEventLogs&SimulatedER2021", "Running-example-simulated.csv")
+port = os.environ.get("PORT")
+if port is None:
+    port = "80"
+port = int(port)
 if __name__ == "__main__":
     if not os.path.exists(os.path.join("static", "temp")):
         os.mkdir(os.path.join("static", "temp"))
-    logs_dictio["log1"] = os.path.join("SampleEventLogs&SimulatedER2021", "running-example.xes")
-    logs_dictio["log2"] = os.path.join("SampleEventLogs&SimulatedER2021", "Running-example-simulated.csv")
-    app.run(host='0.0.0.0')
+    app.run(port=port, threaded=True)
